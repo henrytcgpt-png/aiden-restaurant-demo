@@ -22,8 +22,8 @@ export default function Header() {
     <>
       <div className="ribbon">
         <div className="container">
-          <span>🍱 AIDEN 餐飲網站 Demo v2｜餐牌、分店、WhatsApp、搜尋、查詢清單</span>
-          <span>今日營業中｜07:00 – 22:00｜最後落單 21:30</span>
+          <span>🍱 大快活 Fairwood｜互動餐牌 Demo｜WhatsApp 查詢、分店選擇、快速落單</span>
+          <span>今日營業中｜07:00 – 23:00｜最後落單 22:30</span>
         </div>
       </div>
 

@@ -10,7 +10,7 @@ export default function PopularItems() {
         <div className="section-head">
           <div className="eyebrow-label">Best Sellers</div>
           <h2>本店人氣推介</h2>
-          <p>幫客人減少選擇困難，亦方便餐廳主力推廣高人氣或高毛利菜式。</p>
+          <p>大快活四十年招牌菜式，每日新鮮即製，食客一致好評。</p>
         </div>
         <div className="popular-strip">
           {popularItems.map((item, i) => (

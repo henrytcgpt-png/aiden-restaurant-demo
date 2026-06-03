@@ -13,14 +13,14 @@ export default function Hero() {
       <div className="container hero-grid">
         {/* Left */}
         <div>
-          <div className="eyebrow">🍽️ Restaurant Website Demo v2</div>
+          <div className="eyebrow">🍛 大快活 Fairwood｜香港茶餐廳經典品牌</div>
           <h1>
-            由餐牌展示，升級成可以{' '}
-            <span className="highlight">帶來查詢</span>{' '}
-            嘅餐飲網站
+            四十年香港味道，{' '}
+            <span className="highlight">一鍵 WhatsApp</span>{' '}
+            即時查詢落單
           </h1>
           <p className="hero-desc">
-            呢個 Demo 適合小餐廳、茶餐廳、咖啡店、外賣店及食品品牌。客人可以搜尋菜式、選擇堂食／自取／外賣、加入查詢清單，再一鍵發送 WhatsApp。
+            招牌豬扒飯、西冷牛扒、車仔麵⋯⋯大快活經典菜式任你揀。選擇堂食、自取或外賣，加入查詢清單後一鍵發送 WhatsApp，方便又快捷。
           </p>
           <div className="hero-actions">
             <a href="#menu" className="btn btn-dark">查看互動餐牌 →</a>
@@ -29,10 +29,10 @@ export default function Hero() {
             </a>
           </div>
           <div className="trust-pills">
-            <span className="pill">✅ 今日營業狀態</span>
+            <span className="pill">✅ 今日營業中</span>
             <span className="pill">🔎 菜式搜尋</span>
-            <span className="pill">📍 分店 WhatsApp 切換</span>
-            <span className="pill">📊 Google Sheet 更新概念</span>
+            <span className="pill">📍 旺角 / 荃灣 / 沙田</span>
+            <span className="pill">🥩 豬扒飯 $58 起</span>
           </div>
         </div>
 

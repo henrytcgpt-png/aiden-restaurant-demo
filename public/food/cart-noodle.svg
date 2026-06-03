@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF7ED;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFEDD5;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="bowlGrad" cx="40%" cy="35%" r="62%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#F9F4EE;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#EEE4D6;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="brothGrad" cx="45%" cy="50%" r="58%">
+      <stop offset="0%" style="stop-color:#FDBA74;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#EA580C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C2410C;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="noodleGrad" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1"/>
+      <stop offset="60%" style="stop-color:#FDE68A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1"/>
+    </radialGradient>
+    <linearGradient id="depthOverlay" x1="0%" y1="55%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#C2410C;stop-opacity:0.18"/>
+    </linearGradient>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay" result="blend"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+    <filter id="blobBlur">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="bowlShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#EA580C" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="280" fill="url(#bgGrad)"/>
+
+  <!-- Background blobs — orange palette -->
+  <circle cx="55" cy="48" r="78" fill="#EA580C" opacity="0.16" filter="url(#blobBlur)"/>
+  <circle cx="425" cy="230" r="88" fill="#F97316" opacity="0.20" filter="url(#blobBlur)"/>
+  <circle cx="400" cy="36" r="62" fill="#FDBA74" opacity="0.24" filter="url(#blobBlur)"/>
+  <circle cx="70" cy="246" r="52" fill="#FED7AA" opacity="0.26" filter="url(#blobBlur)"/>
+
+  <circle cx="432" cy="55" r="18" fill="#F97316" opacity="0.13"/>
+  <circle cx="452" cy="78" r="10" fill="#FDBA74" opacity="0.18"/>
+  <circle cx="44" cy="218" r="14" fill="#EA580C" opacity="0.14"/>
+  <circle cx="22" cy="240" r="9" fill="#FED7AA" opacity="0.22"/>
+  <circle cx="460" cy="190" r="11" fill="#FFEDD5" opacity="0.26"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="240" cy="256" rx="148" ry="16" fill="#C2410C" opacity="0.12"/>
+
+  <!-- Bowl outer body (wide, shallow) -->
+  <path d="M92 155 Q102 240 240 248 Q378 240 388 155 Z" fill="#EEE4D6" filter="url(#bowlShadow)"/>
+  <!-- Bowl inner surface -->
+  <path d="M100 155 Q110 234 240 242 Q370 234 380 155 Z" fill="url(#bowlGrad)"/>
+  <!-- Bowl rim (top ellipse) -->
+  <ellipse cx="240" cy="155" rx="140" ry="28" fill="#F5EDE0"/>
+  <ellipse cx="240" cy="154" rx="132" ry="23" fill="#FFFFFF" opacity="0.60"/>
+
+  <!-- Broth / soup base -->
+  <ellipse cx="240" cy="190" rx="118" ry="45" fill="url(#brothGrad)" opacity="0.82"/>
+  <!-- Broth surface sheen -->
+  <ellipse cx="220" cy="182" rx="60" ry="18" fill="#FED7AA" opacity="0.32"/>
+
+  <!-- Noodle nest (wavy lines) -->
+  <!-- Main noodle mound -->
+  <path d="M148 178 Q162 165 178 175 Q192 185 208 170 Q222 158 238 170 Q252 182 268 168 Q282 156 298 168 Q312 180 328 170 Q338 162 348 174" fill="none" stroke="#FDE68A" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+  <path d="M152 190 Q168 177 184 187 Q198 197 214 183 Q228 172 244 182 Q258 192 274 178 Q288 166 304 178 Q318 190 332 180 Q342 172 350 182" fill="none" stroke="#F59E0B" stroke-width="5.5" stroke-linecap="round" opacity="0.88"/>
+  <path d="M155 202 Q172 189 188 199 Q202 209 218 196 Q232 185 248 195 Q262 205 278 192 Q292 181 306 191 Q320 201 334 192" fill="none" stroke="#FDE68A" stroke-width="5" stroke-linecap="round" opacity="0.84"/>
+  <path d="M160 213 Q177 200 193 210 Q207 220 222 208 Q236 198 252 207 Q266 216 280 205 Q294 195 308 204 Q320 213 332 205" fill="none" stroke="#FEF3C7" stroke-width="4.5" stroke-linecap="round" opacity="0.76"/>
+
+  <!-- Fish balls (白色圓魚蛋) -->
+  <circle cx="175" cy="168" r="14" fill="#FAFAF8"/>
+  <circle cx="175" cy="166" r="13" fill="#FFFFFF"/>
+  <circle cx="170" cy="163" r="4" fill="#FAFAF8" opacity="0.50"/>
+
+  <circle cx="220" cy="160" r="13" fill="#FAFAF8"/>
+  <circle cx="220" cy="158" r="12" fill="#FFFFFF"/>
+  <circle cx="215" cy="155" r="3.5" fill="#FAFAF8" opacity="0.50"/>
+
+  <!-- Beef brisket piece (牛腩) -->
+  <path d="M266 157 Q292 148 310 158 Q318 166 308 180 Q296 190 274 188 Q256 184 252 174 Q248 162 266 157Z" fill="#92400E"/>
+  <path d="M270 160 Q290 152 308 160" fill="none" stroke="#FDE68A" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+  <ellipse cx="282" cy="165" rx="18" ry="9" fill="#B45309" opacity="0.55"/>
+
+  <!-- Bean curd puff (豆卜) — square pieces -->
+  <rect x="320" y="155" width="26" height="22" rx="5" ry="5" fill="#F59E0B" opacity="0.85"/>
+  <rect x="323" y="158" width="20" height="16" rx="3" ry="3" fill="#FDE68A" opacity="0.60"/>
+  <rect x="348" y="160" width="22" height="18" rx="4" ry="4" fill="#F59E0B" opacity="0.80"/>
+  <rect x="351" y="163" width="16" height="12" rx="3" ry="3" fill="#FDE68A" opacity="0.55"/>
+
+  <!-- Spring onion / chili garnish -->
+  <circle cx="198" cy="165" r="2.8" fill="#22C55E" opacity="0.78"/>
+  <circle cx="245" cy="160" r="2.5" fill="#4ADE80" opacity="0.72"/>
+  <circle cx="340" cy="162" r="2.6" fill="#16A34A" opacity="0.75"/>
+  <!-- Red chili dots -->
+  <circle cx="185" cy="173" r="2.2" fill="#EF4444" opacity="0.70"/>
+  <circle cx="258" cy="165" r="2.0" fill="#DC2626" opacity="0.65"/>
+
+  <!-- Chopsticks resting across bowl rim -->
+  <line x1="145" y1="138" x2="345" y2="130" stroke="#92400E" stroke-width="5" stroke-linecap="round" opacity="0.72"/>
+  <line x1="155" y1="148" x2="355" y2="140" stroke="#B45309" stroke-width="4" stroke-linecap="round" opacity="0.60"/>
+
+  <!-- Steam curls -->
+  <path d="M200 130 Q195 116 201 102 Q207 88 202 74" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.55"/>
+  <path d="M240 125 Q235 110 241 95 Q247 80 242 65" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.52"/>
+  <path d="M280 128 Q275 113 281 98 Q287 83 282 68" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.50"/>
+
+  <!-- Depth overlay -->
+  <rect width="480" height="280" fill="url(#depthOverlay)"/>
+  <!-- Grain texture -->
+  <rect width="480" height="280" fill="url(#bgGrad)" filter="url(#grain)" opacity="0.4"/>
+</svg>

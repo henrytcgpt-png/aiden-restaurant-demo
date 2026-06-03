@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 const SHEET_ROWS = [
-  { field: '招牌焗豬扒飯', before: 'HK$58', after: 'HK$62', key: 'price1' },
-  { field: '午市優惠 Banner', before: 'FALSE', after: 'TRUE', key: 'promo' },
-  { field: '旺角店 WhatsApp', before: '0000 1111', after: '0000 1234', key: 'phone' },
-  { field: '沙嗲牛肉麵', before: '—', after: '新增 HK$42', key: 'newItem' },
+  { field: '招牌靚靚豬扒飯', before: 'HK$58', after: 'HK$62', key: 'price1' },
+  { field: '午市特價 Banner', before: 'FALSE', after: 'TRUE', key: 'promo' },
+  { field: '旺角店 WhatsApp', before: '2392 0338', after: '2392 0339', key: 'phone' },
+  { field: '滑蛋牛肉飯', before: '—', after: '新增 HK$54', key: 'newItem' },
 ]
 
 export default function SmartUpdateSection() {
@@ -60,7 +60,7 @@ export default function SmartUpdateSection() {
               <div className="sheet-header">
                 <span className="sheet-logo">📊</span>
                 <div>
-                  <div className="sheet-title">Happy Bowl 餐牌管理.xlsx</div>
+                  <div className="sheet-title">大快活 Fairwood 餐牌管理.xlsx</div>
                   <div className="sheet-sub">Google Sheets · 上次編輯：剛剛</div>
                 </div>
               </div>

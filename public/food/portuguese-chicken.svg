@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFBEB;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FEF9C3;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="dishGrad" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#FEF9F0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F3EDE0;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="sauceGrad" cx="50%" cy="45%" r="62%">
+      <stop offset="0%" style="stop-color:#FDE68A;stop-opacity:1"/>
+      <stop offset="40%" style="stop-color:#F59E0B;stop-opacity:1"/>
+      <stop offset="80%" style="stop-color:#D97706;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B45309;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="chickenGrad" cx="38%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#FDE68A;stop-opacity:1"/>
+      <stop offset="45%" style="stop-color:#F59E0B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B45309;stop-opacity:1"/>
+    </radialGradient>
+    <linearGradient id="depthOverlay" x1="0%" y1="55%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#B45309;stop-opacity:0.16"/>
+    </linearGradient>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay" result="blend"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+    <filter id="blobBlur">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="dishShadow">
+      <feDropShadow dx="0" dy="7" stdDeviation="12" flood-color="#D97706" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="280" fill="url(#bgGrad)"/>
+
+  <!-- Background blobs — yellow/gold palette -->
+  <circle cx="55" cy="50" r="78" fill="#F59E0B" opacity="0.16" filter="url(#blobBlur)"/>
+  <circle cx="422" cy="225" r="88" fill="#FBBF24" opacity="0.20" filter="url(#blobBlur)"/>
+  <circle cx="398" cy="36" r="62" fill="#FDE68A" opacity="0.24" filter="url(#blobBlur)"/>
+  <circle cx="72" cy="245" r="52" fill="#FEF08A" opacity="0.26" filter="url(#blobBlur)"/>
+
+  <circle cx="432" cy="55" r="18" fill="#F59E0B" opacity="0.12"/>
+  <circle cx="452" cy="78" r="10" fill="#FBBF24" opacity="0.18"/>
+  <circle cx="44" cy="218" r="14" fill="#D97706" opacity="0.14"/>
+  <circle cx="22" cy="240" r="9" fill="#FDE68A" opacity="0.22"/>
+  <circle cx="460" cy="190" r="11" fill="#FEF9C3" opacity="0.25"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="240" cy="253" rx="145" ry="17" fill="#B45309" opacity="0.12"/>
+
+  <!-- Baking dish outer rim (rectangular with rounded corners) -->
+  <rect x="82" y="112" width="318" height="148" rx="22" ry="22" fill="#E5D5B0" filter="url(#dishShadow)"/>
+  <!-- Baking dish inner surface -->
+  <rect x="90" y="120" width="302" height="134" rx="18" ry="18" fill="url(#dishGrad)"/>
+  <!-- Dish rim highlight -->
+  <rect x="90" y="120" width="302" height="16" rx="18" ry="18" fill="#FFFFFF" opacity="0.35"/>
+
+  <!-- Golden sauce / curry base layer -->
+  <ellipse cx="240" cy="200" rx="132" ry="62" fill="url(#sauceGrad)" opacity="0.90"/>
+  <!-- Sauce bubbles / texture -->
+  <circle cx="175" cy="192" r="6" fill="#FDE68A" opacity="0.55"/>
+  <circle cx="200" cy="185" r="5" fill="#FBBF24" opacity="0.50"/>
+  <circle cx="225" cy="192" r="7" fill="#FDE68A" opacity="0.48"/>
+  <circle cx="258" cy="186" r="5.5" fill="#F59E0B" opacity="0.52"/>
+  <circle cx="284" cy="194" r="6" fill="#FDE68A" opacity="0.50"/>
+  <circle cx="308" cy="188" r="5" fill="#FBBF24" opacity="0.48"/>
+  <!-- Sauce highlight -->
+  <ellipse cx="218" cy="190" rx="55" ry="22" fill="#FEF3C7" opacity="0.35"/>
+
+  <!-- Rice under sauce (visible at edges) -->
+  <ellipse cx="160" cy="215" rx="45" ry="18" fill="#FDFDFC" opacity="0.70"/>
+  <ellipse cx="320" cy="218" rx="38" ry="15" fill="#FDFDFC" opacity="0.68"/>
+
+  <!-- Chicken pieces — 3 golden baked pieces -->
+  <!-- Piece 1 (left-center) -->
+  <path d="M170 168 Q195 155 220 162 Q238 172 230 192 Q220 205 195 202 Q172 198 165 185 Q160 174 170 168Z" fill="url(#chickenGrad)"/>
+  <ellipse cx="197" cy="174" rx="22" ry="11" fill="#FEF3C7" opacity="0.35"/>
+  <path d="M175 170 Q195 160 215 168" fill="none" stroke="#92400E" stroke-width="1.5" stroke-linecap="round" opacity="0.30"/>
+
+  <!-- Piece 2 (center) -->
+  <path d="M228 155 Q262 142 292 155 Q308 166 300 188 Q290 204 258 204 Q228 202 220 186 Q214 170 228 155Z" fill="url(#chickenGrad)"/>
+  <ellipse cx="258" cy="165" rx="24" ry="12" fill="#FEF3C7" opacity="0.38"/>
+  <!-- Golden baked crust marks -->
+  <path d="M236 158 Q258 148 280 158" fill="none" stroke="#92400E" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+  <path d="M232 170 Q258 162 282 170" fill="none" stroke="#92400E" stroke-width="1.5" stroke-linecap="round" opacity="0.22"/>
+
+  <!-- Piece 3 (right) -->
+  <path d="M300 165 Q320 153 344 162 Q358 172 350 192 Q340 206 314 205 Q292 202 286 188 Q281 174 300 165Z" fill="url(#chickenGrad)"/>
+  <ellipse cx="318" cy="175" rx="20" ry="10" fill="#FEF3C7" opacity="0.35"/>
+  <path d="M306 168 Q318 160 336 166" fill="none" stroke="#92400E" stroke-width="1.5" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- Green garnish / herbs -->
+  <circle cx="186" cy="204" r="3.5" fill="#16A34A" opacity="0.78"/>
+  <circle cx="242" cy="207" r="3.0" fill="#22C55E" opacity="0.72"/>
+  <circle cx="296" cy="205" r="3.2" fill="#4ADE80" opacity="0.68"/>
+  <circle cx="190" cy="198" r="2.5" fill="#86EFAC" opacity="0.65"/>
+  <circle cx="266" cy="202" r="2.8" fill="#16A34A" opacity="0.70"/>
+
+  <!-- Steam curls -->
+  <path d="M215 115 Q210 101 216 87 Q222 73 217 59" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.55"/>
+  <path d="M240 110 Q235 95 241 80 Q247 65 242 50" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.50"/>
+  <path d="M266 113 Q261 98 267 83 Q273 68 268 53" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.48"/>
+
+  <!-- Depth overlay -->
+  <rect width="480" height="280" fill="url(#depthOverlay)"/>
+  <!-- Grain texture -->
+  <rect width="480" height="280" fill="url(#bgGrad)" filter="url(#grain)" opacity="0.4"/>
+</svg>
