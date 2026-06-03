@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F3FF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#EDE9FE;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDD6FE;stop-opacity:1"/>
+      <stop offset="35%" style="stop-color:#C4B5FD;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#A78BFA;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="milkTeaFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A96A;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#B87333;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#92400E;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="domeGrad" cx="44%" cy="38%" r="58%">
+      <stop offset="0%" style="stop-color:#EDE9FE;stop-opacity:0.92"/>
+      <stop offset="65%" style="stop-color:#C4B5FD;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:0.9"/>
+    </radialGradient>
+    <linearGradient id="depthOverlay" x1="0%" y1="55%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#4C1D95;stop-opacity:0.18"/>
+    </linearGradient>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay" result="blend"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+    <filter id="blobBlur">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="cupShadow">
+      <feDropShadow dx="0" dy="9" stdDeviation="14" flood-color="#7C3AED" flood-opacity="0.28"/>
+    </filter>
+    <clipPath id="cupClip">
+      <path d="M188 95 Q182 92 178 100 L172 248 Q172 258 220 260 Q268 258 268 248 L262 100 Q258 92 252 95 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="280" fill="url(#bgGrad)"/>
+
+  <!-- Decorative blobs -->
+  <circle cx="55" cy="50" r="82" fill="#8B5CF6" opacity="0.17" filter="url(#blobBlur)"/>
+  <circle cx="430" cy="228" r="90" fill="#7C3AED" opacity="0.19" filter="url(#blobBlur)"/>
+  <circle cx="402" cy="36" r="65" fill="#DDD6FE" opacity="0.3" filter="url(#blobBlur)"/>
+  <circle cx="76" cy="246" r="52" fill="#C4B5FD" opacity="0.24" filter="url(#blobBlur)"/>
+
+  <!-- Accent circles -->
+  <circle cx="444" cy="57" r="18" fill="#8B5CF6" opacity="0.14"/>
+  <circle cx="462" cy="79" r="10" fill="#A78BFA" opacity="0.2"/>
+  <circle cx="40" cy="214" r="14" fill="#7C3AED" opacity="0.17"/>
+  <circle cx="20" cy="240" r="9" fill="#DDD6FE" opacity="0.25"/>
+  <circle cx="460" cy="178" r="11" fill="#C4B5FD" opacity="0.28"/>
+  <!-- Extra decorative dots -->
+  <circle cx="155" cy="85" r="7" fill="#C4B5FD" opacity="0.3"/>
+  <circle cx="148" cy="98" r="4" fill="#DDD6FE" opacity="0.35"/>
+  <circle cx="340" cy="92" r="9" fill="#8B5CF6" opacity="0.18"/>
+  <circle cx="352" cy="78" r="5" fill="#A78BFA" opacity="0.22"/>
+
+  <!-- Cup drop shadow -->
+  <ellipse cx="220" cy="265" rx="55" ry="10" fill="#6D28D9" opacity="0.18"/>
+
+  <!-- Cup body — tapered takeaway cup shape -->
+  <path d="M190 95 Q185 92 180 100 L174 248 Q174 258 220 260 Q266 258 266 248 L260 100 Q255 92 250 95 Z" fill="url(#milkTeaFill)" filter="url(#cupShadow)"/>
+
+  <!-- Milk tea inside fill (via clip) -->
+  <rect x="170" y="95" width="104" height="170" fill="url(#milkTeaFill)" clip-path="url(#cupClip)"/>
+
+  <!-- Cup front face gradient overlay -->
+  <path d="M190 95 Q185 92 180 100 L174 248 Q174 258 220 260 Q266 258 266 248 L260 100 Q255 92 250 95 Z" fill="url(#cupGrad)" opacity="0.72"/>
+
+  <!-- Cup highlight left edge -->
+  <path d="M183 104 L177 246 Q178 254 186 257" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <!-- Cup highlight right edge -->
+  <path d="M257 104 L263 244 Q262 253 254 257" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Label area (white rectangle on cup) -->
+  <rect x="188" y="138" width="64" height="70" rx="8" fill="#FFFFFF" opacity="0.88"/>
+  <rect x="189" y="139" width="62" height="68" rx="7" fill="none" stroke="#DDD6FE" stroke-width="1.5"/>
+  <!-- Label brand lines (decorative) -->
+  <rect x="196" y="150" width="48" height="4" rx="2" fill="#C4B5FD" opacity="0.75"/>
+  <rect x="200" y="160" width="40" height="3" rx="1.5" fill="#A78BFA" opacity="0.55"/>
+  <rect x="202" y="170" width="36" height="3" rx="1.5" fill="#C4B5FD" opacity="0.5"/>
+  <!-- Label logo circle -->
+  <circle cx="220" cy="188" r="10" fill="#8B5CF6" opacity="0.75"/>
+  <circle cx="220" cy="188" r="6" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Tapioca pearl dots at bottom -->
+  <circle cx="200" cy="242" r="7" fill="#1C1917" opacity="0.88"/>
+  <circle cx="218" cy="246" r="7.5" fill="#1C1917" opacity="0.88"/>
+  <circle cx="236" cy="242" r="7" fill="#1C1917" opacity="0.88"/>
+  <circle cx="252" cy="244" r="6.5" fill="#292524" opacity="0.82"/>
+  <circle cx="186" cy="245" r="6" fill="#292524" opacity="0.78"/>
+  <!-- Second row of pearls -->
+  <circle cx="208" cy="233" r="6.5" fill="#1C1917" opacity="0.75"/>
+  <circle cx="224" cy="235" r="7" fill="#1C1917" opacity="0.75"/>
+  <circle cx="242" cy="233" r="6.5" fill="#292524" opacity="0.72"/>
+  <!-- Pearl highlights -->
+  <circle cx="197" cy="239" r="2" fill="#57534E" opacity="0.5"/>
+  <circle cx="215" cy="243" r="2.2" fill="#57534E" opacity="0.5"/>
+  <circle cx="233" cy="239" r="2" fill="#57534E" opacity="0.5"/>
+
+  <!-- Dome lid -->
+  <ellipse cx="220" cy="96" rx="58" ry="18" fill="url(#domeGrad)"/>
+  <path d="M162 96 Q175 68 220 62 Q265 68 278 96" fill="url(#domeGrad)" opacity="0.95"/>
+  <path d="M162 96 Q175 68 220 62 Q265 68 278 96" fill="none" stroke="#A78BFA" stroke-width="1.8" opacity="0.6"/>
+  <!-- Dome highlight -->
+  <path d="M174 92 Q192 72 220 68 Q248 72 266 90" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.38"/>
+  <!-- Dome rim -->
+  <ellipse cx="220" cy="96" rx="58" ry="18" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.55"/>
+
+  <!-- Straw through dome -->
+  <rect x="232" y="30" width="10" height="120" rx="5" fill="#A78BFA" opacity="0.9"/>
+  <rect x="233" y="30" width="4" height="120" rx="2" fill="#FFFFFF" opacity="0.35"/>
+  <!-- Straw dome hole -->
+  <ellipse cx="237" cy="84" rx="6" ry="3" fill="#7C3AED" opacity="0.4"/>
+
+  <!-- Steam wisps above straw -->
+  <path d="M232 32 Q227 22 232 12 Q237 2 232 -8" fill="none" stroke="#C4B5FD" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M244 28 Q249 18 244 8 Q239 -2 244 -12" fill="none" stroke="#DDD6FE" stroke-width="2.5" stroke-linecap="round" opacity="0.42"/>
+
+  <!-- Cup base seal strip -->
+  <rect x="175" y="250" width="90" height="8" rx="4" fill="#7C3AED" opacity="0.5"/>
+
+  <!-- Depth overlay -->
+  <rect width="480" height="280" fill="url(#depthOverlay)"/>
+  <rect width="480" height="280" fill="url(#bgGrad)" filter="url(#grain)" opacity="0.4"/>
+</svg>
