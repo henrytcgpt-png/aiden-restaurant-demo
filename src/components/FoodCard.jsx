@@ -33,10 +33,23 @@ export default function FoodCard({ item }) {
     setCheckedAddons([])
   }
 
+  const showPhoto = item.imageUrl && !imgError
+
   return (
     <article className="food-card">
-      <div className="food-img" style={imgError ? { background: item.gradient } : {}}>
-        {!imgError ? (
+      <div
+        className="food-img"
+        style={showPhoto ? {} : { background: item.gradient }}
+      >
+        {/* decorative blobs (only when no photo) */}
+        {!showPhoto && (
+          <>
+            <div className="food-blob food-blob-1" />
+            <div className="food-blob food-blob-2" />
+          </>
+        )}
+
+        {showPhoto ? (
           <img
             src={item.imageUrl}
             alt={item.name}
@@ -49,6 +62,7 @@ export default function FoodCard({ item }) {
         )}
         <span className="food-badge">{item.badge}</span>
       </div>
+
       <div className="food-body">
         <h3 className="food-name">{item.name}</h3>
         <p className="food-desc">{item.description}</p>

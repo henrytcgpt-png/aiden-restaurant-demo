@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF7ED;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFEDD5;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="plateGrad" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+      <stop offset="75%" style="stop-color:#F8F5F1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#EDE9E4;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="chopGrad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" style="stop-color:#FB923C;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#EA580C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9A3412;stop-opacity:1"/>
+    </radialGradient>
+    <radialGradient id="sauceGrad" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" style="stop-color:#F87171;stop-opacity:1"/>
+      <stop offset="60%" style="stop-color:#EF4444;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B91C1C;stop-opacity:1"/>
+    </radialGradient>
+    <linearGradient id="depthOverlay" x1="0%" y1="55%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#78350F;stop-opacity:0.2"/>
+    </linearGradient>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="overlay" result="blend"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+    <filter id="blobBlur">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="plateShadow">
+      <feDropShadow dx="0" dy="7" stdDeviation="12" flood-color="#F97316" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="280" fill="url(#bgGrad)"/>
+
+  <!-- Decorative background blobs -->
+  <circle cx="55" cy="48" r="78" fill="#F97316" opacity="0.18" filter="url(#blobBlur)"/>
+  <circle cx="425" cy="228" r="88" fill="#FB923C" opacity="0.22" filter="url(#blobBlur)"/>
+  <circle cx="398" cy="38" r="62" fill="#FDBA74" opacity="0.26" filter="url(#blobBlur)"/>
+  <circle cx="78" cy="244" r="52" fill="#FED7AA" opacity="0.28" filter="url(#blobBlur)"/>
+
+  <!-- Accent circles -->
+  <circle cx="432" cy="55" r="18" fill="#F97316" opacity="0.13"/>
+  <circle cx="452" cy="78" r="10" fill="#FB923C" opacity="0.18"/>
+  <circle cx="44" cy="218" r="14" fill="#EA580C" opacity="0.16"/>
+  <circle cx="22" cy="240" r="9" fill="#FDBA74" opacity="0.22"/>
+  <circle cx="460" cy="188" r="11" fill="#FED7AA" opacity="0.25"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="240" cy="253" rx="142" ry="17" fill="#C2410C" opacity="0.13"/>
+
+  <!-- Plate outer rim -->
+  <ellipse cx="240" cy="178" rx="150" ry="100" fill="#EDE9E4" filter="url(#plateShadow)"/>
+  <!-- Plate surface -->
+  <ellipse cx="240" cy="175" rx="143" ry="95" fill="url(#plateGrad)"/>
+  <!-- Plate inner rim line -->
+  <ellipse cx="240" cy="175" rx="133" ry="86" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.65"/>
+
+  <!-- Rice mound base -->
+  <ellipse cx="222" cy="198" rx="98" ry="55" fill="#FAFAF8"/>
+  <ellipse cx="222" cy="193" rx="93" ry="50" fill="#FDFDFC"/>
+  <!-- Rice texture — dense small circles -->
+  <circle cx="175" cy="188" r="3.2" fill="#EFECEA"/>
+  <circle cx="188" cy="180" r="2.8" fill="#F2EFEC"/>
+  <circle cx="202" cy="186" r="3.5" fill="#EDE9E4"/>
+  <circle cx="216" cy="179" r="3.0" fill="#F2EFEC"/>
+  <circle cx="230" cy="183" r="3.2" fill="#EFECEA"/>
+  <circle cx="244" cy="177" r="2.8" fill="#F2EFEC"/>
+  <circle cx="258" cy="184" r="3.4" fill="#EDE9E4"/>
+  <circle cx="272" cy="179" r="3.0" fill="#EFECEA"/>
+  <circle cx="284" cy="186" r="2.8" fill="#F2EFEC"/>
+  <circle cx="168" cy="198" r="2.8" fill="#EDE9E4"/>
+  <circle cx="180" cy="204" r="3.2" fill="#EFECEA"/>
+  <circle cx="194" cy="198" r="3.5" fill="#F2EFEC"/>
+  <circle cx="208" cy="206" r="3.0" fill="#EDE9E4"/>
+  <circle cx="222" cy="200" r="3.4" fill="#EFECEA"/>
+  <circle cx="236" cy="207" r="2.8" fill="#F2EFEC"/>
+  <circle cx="250" cy="201" r="3.2" fill="#EDE9E4"/>
+  <circle cx="264" cy="206" r="3.0" fill="#EFECEA"/>
+  <circle cx="278" cy="199" r="2.8" fill="#F2EFEC"/>
+  <circle cx="183" cy="214" r="2.6" fill="#EDE9E4"/>
+  <circle cx="197" cy="215" r="2.8" fill="#EFECEA"/>
+  <circle cx="211" cy="215" r="2.6" fill="#F2EFEC"/>
+  <circle cx="225" cy="215" r="2.8" fill="#EDE9E4"/>
+  <circle cx="239" cy="212" r="2.5" fill="#EFECEA"/>
+  <circle cx="253" cy="213" r="2.6" fill="#F2EFEC"/>
+  <circle cx="266" cy="210" r="2.4" fill="#EDE9E4"/>
+  <!-- Rice highlight -->
+  <ellipse cx="210" cy="184" rx="52" ry="20" fill="#FFFFFF" opacity="0.48"/>
+
+  <!-- Tomato sauce splash -->
+  <ellipse cx="268" cy="170" rx="44" ry="26" fill="url(#sauceGrad)" opacity="0.9"/>
+  <circle cx="252" cy="158" r="11" fill="#F87171" opacity="0.78"/>
+  <circle cx="288" cy="160" r="9" fill="#EF4444" opacity="0.72"/>
+  <circle cx="278" cy="152" r="7" fill="#DC2626" opacity="0.68"/>
+  <circle cx="257" cy="182" r="8" fill="#B91C1C" opacity="0.62"/>
+  <circle cx="290" cy="178" r="6" fill="#EF4444" opacity="0.6"/>
+  <!-- Sauce highlight -->
+  <ellipse cx="262" cy="164" rx="20" ry="10" fill="#FCA5A5" opacity="0.45"/>
+
+  <!-- Pork chop body -->
+  <ellipse cx="244" cy="170" rx="82" ry="46" fill="url(#chopGrad)"/>
+  <!-- Pork chop bone -->
+  <rect x="148" y="158" width="28" height="16" rx="8" fill="#FEF3C7"/>
+  <circle cx="148" cy="166" r="10" fill="#FDE68A"/>
+  <circle cx="148" cy="166" r="6" fill="#FCA5A5" opacity="0.4"/>
+  <!-- Pork chop surface sheen -->
+  <ellipse cx="228" cy="158" rx="38" ry="18" fill="#FED7AA" opacity="0.28"/>
+  <ellipse cx="218" cy="152" rx="22" ry="10" fill="#FFFFFF" opacity="0.18"/>
+  <!-- Grill marks — 3 diagonal dark lines -->
+  <line x1="203" y1="147" x2="187" y2="193" stroke="#7C2D12" stroke-width="5" stroke-linecap="round" opacity="0.78"/>
+  <line x1="224" y1="144" x2="208" y2="190" stroke="#7C2D12" stroke-width="5" stroke-linecap="round" opacity="0.78"/>
+  <line x1="245" y1="142" x2="229" y2="188" stroke="#7C2D12" stroke-width="5" stroke-linecap="round" opacity="0.78"/>
+
+  <!-- Green herb flecks -->
+  <circle cx="195" cy="190" r="2.2" fill="#86EFAC" opacity="0.72"/>
+  <circle cx="255" cy="204" r="2.0" fill="#4ADE80" opacity="0.68"/>
+  <circle cx="278" cy="197" r="1.8" fill="#86EFAC" opacity="0.65"/>
+
+  <!-- Steam curls -->
+  <path d="M205 135 Q200 121 206 107 Q212 93 207 79" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.58"/>
+  <path d="M228 130 Q223 115 229 100 Q235 85 230 70" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.52"/>
+  <path d="M252 132 Q247 118 253 103 Q259 88 254 73" fill="none" stroke="#D1D5DB" stroke-width="2.8" stroke-linecap="round" opacity="0.50"/>
+
+  <!-- Depth overlay -->
+  <rect width="480" height="280" fill="url(#depthOverlay)"/>
+  <!-- Grain texture -->
+  <rect width="480" height="280" fill="url(#bgGrad)" filter="url(#grain)" opacity="0.4"/>
+</svg>

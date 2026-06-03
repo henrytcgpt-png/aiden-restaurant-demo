@@ -8,7 +8,7 @@ export const menuItems = [
     description: '香濃茄汁配厚切豬扒，適合作為網站主打招牌產品。',
     emoji: '🥩',
     gradient: 'linear-gradient(135deg, #FDBA74 0%, #F97316 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/pork-chop-rice.svg',
     labels: [
       { text: '人氣', type: 'hot' },
       { text: '含奶類', type: '' },
@@ -28,7 +28,7 @@ export const menuItems = [
     description: '嫩滑雞件配油飯及秘製醬汁，清爽又飽肚。',
     emoji: '🍗',
     gradient: 'linear-gradient(135deg, #A7F3D0 0%, #10B981 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/hainan-chicken.svg',
     labels: [
       { text: '熱賣', type: 'hot' },
       { text: '少油', type: '' },
@@ -47,7 +47,7 @@ export const menuItems = [
     description: '濃厚咖喱配慢煮牛腩，適合用食物相片突出吸引力。',
     emoji: '🍛',
     gradient: 'linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/curry-beef.svg',
     labels: [
       { text: '微辣', type: 'spicy' },
       { text: '推介', type: 'hot' },
@@ -66,7 +66,7 @@ export const menuItems = [
     description: '早餐及下午茶人氣選擇，可加入時段限定標籤。',
     emoji: '🍜',
     gradient: 'linear-gradient(135deg, #FBCFE8 0%, #F472B6 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/satay-noodle.svg',
     labels: [
       { text: '早餐', type: 'new' },
       { text: '下午茶', type: '' },
@@ -85,7 +85,7 @@ export const menuItems = [
     description: '清楚分類粉麵、飯餐、飲品，減少客人查詢時間。',
     emoji: '🦐',
     gradient: 'linear-gradient(135deg, #BFDBFE 0%, #3B82F6 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1569718212790-2fe56f8e1e10?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/wonton-noodle.svg',
     labels: [
       { text: '粉麵', type: '' },
       { text: '清湯', type: '' },
@@ -104,7 +104,7 @@ export const menuItems = [
     description: '套餐可加配飲品，價錢及描述可由後台快速更新。',
     emoji: '🍋',
     gradient: 'linear-gradient(135deg, #FEF08A 0%, #EAB308 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1556679908-4e27aeb6b3e5?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/lemon-tea.svg',
     labels: [
       { text: '凍飲', type: '' },
       { text: '港式', type: 'new' },
@@ -123,7 +123,7 @@ export const menuItems = [
     description: '可加入凍熱選項、少甜、走冰等備註，方便 WhatsApp 查詢。',
     emoji: '🧋',
     gradient: 'linear-gradient(135deg, #DDD6FE 0%, #8B5CF6 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/milk-tea.svg',
     labels: [
       { text: '含奶類', type: '' },
       { text: '經典', type: 'hot' },
@@ -142,7 +142,7 @@ export const menuItems = [
     description: '小食類可以推動加配，提高平均客單價。',
     emoji: '🍗',
     gradient: 'linear-gradient(135deg, #FECACA 0%, #EF4444 100%)',
-    imageUrl: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=480&h=280&fit=crop&q=82',
+    imageUrl: '/food/fried-wings.svg',
     labels: [
       { text: '加配', type: '' },
       { text: '小食', type: 'new' },
