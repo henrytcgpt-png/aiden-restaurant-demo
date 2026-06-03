@@ -10,6 +10,7 @@ import SmartUpdateSection from './components/SmartUpdateSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 import StickyBar from './components/StickyBar'
+import CartDrawer from './components/CartDrawer'
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
       </main>
       <Footer />
       <StickyBar />
+      <CartDrawer />
     </>
   )
 }

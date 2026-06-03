@@ -5,6 +5,7 @@ export default function FoodCard({ item }) {
   const { dispatch, state } = useApp()
   const [checkedAddons, setCheckedAddons] = useState([])
   const [justAdded, setJustAdded] = useState(false)
+  const [imgError, setImgError] = useState(false)
 
   function toggleAddon(value) {
     setCheckedAddons(prev =>
@@ -34,8 +35,18 @@ export default function FoodCard({ item }) {
 
   return (
     <article className="food-card">
-      <div className="food-img" style={{ background: item.gradient }}>
-        <span className="food-emoji">{item.emoji}</span>
+      <div className="food-img" style={imgError ? { background: item.gradient } : {}}>
+        {!imgError ? (
+          <img
+            src={item.imageUrl}
+            alt={item.name}
+            className="food-photo"
+            onError={() => setImgError(true)}
+            loading="lazy"
+          />
+        ) : (
+          <span className="food-emoji">{item.emoji}</span>
+        )}
         <span className="food-badge">{item.badge}</span>
       </div>
       <div className="food-body">

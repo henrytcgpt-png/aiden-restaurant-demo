@@ -8,6 +8,7 @@ const initialState = {
   selectedBranch: branches[0],
   orderMode: siteConfig.defaultOrderMode,
   cart: [],
+  isCartOpen: false,
 }
 
 function reducer(state, action) {
@@ -22,6 +23,10 @@ function reducer(state, action) {
       return { ...state, cart: state.cart.filter((_, i) => i !== action.payload) }
     case 'CLEAR_CART':
       return { ...state, cart: [] }
+    case 'OPEN_CART':
+      return { ...state, isCartOpen: true }
+    case 'CLOSE_CART':
+      return { ...state, isCartOpen: false }
     default:
       return state
   }
