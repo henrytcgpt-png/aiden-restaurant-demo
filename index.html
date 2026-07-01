@@ -1,47 +1,1163 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>餐飲網站 Demo v2｜Happy Bowl by AIDEN Web Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0D1C10">
+  <title>LinK Cut 單剪專門店｜將軍澳南豐廣場</title>
+  <meta name="description" content="LinK Cut 單剪專門店，位於將軍澳南豐廣場。成人 $80，學生 $70，長者 $50。無需預約，Walk-in 即可，約10分鐘完成。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
-    :root{--navy:#102A43;--cream:#F8F5EF;--orange:#FF8A3D;--green:#12B886;--text:#1F2937;--muted:#64748B;--line:#E5E7EB;--dark:#0F172A}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text);padding-bottom:88px}a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.ribbon{background:linear-gradient(90deg,var(--navy),#0F172A);color:#fff;font-size:14px}.ribbon .container{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:10px 0;flex-wrap:wrap}.header{position:sticky;top:0;z-index:80;backdrop-filter:blur(16px);background:rgba(248,245,239,.9);border-bottom:1px solid rgba(255,255,255,.8)}.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.brand-mark{width:48px;height:48px;border-radius:18px;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:22px;box-shadow:0 12px 30px rgba(255,138,61,.25)}.brand small{display:block;color:var(--green);font-size:12px;letter-spacing:.08em}.nav-links{display:flex;gap:24px;align-items:center;font-size:14px;font-weight:900;color:#334155}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 22px;font-weight:900;cursor:pointer;transition:.2s ease;font-family:inherit;font-size:15px}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--orange);color:#fff;box-shadow:0 14px 30px rgba(255,138,61,.28)}.btn-dark{background:var(--navy);color:#fff;box-shadow:0 14px 30px rgba(16,42,67,.22)}.btn-light{background:#fff;color:var(--navy);border:1px solid var(--line)}.hero{position:relative;overflow:hidden;padding:62px 0 52px}.hero:before{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:rgba(255,138,61,.25);filter:blur(58px);right:-160px;top:-90px}.hero:after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:rgba(18,184,134,.2);filter:blur(58px);left:-110px;bottom:-60px}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:48px}.eyebrow{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#E86818;border:1px solid rgba(255,138,61,.22);padding:10px 16px;border-radius:999px;font-weight:900;font-size:14px;box-shadow:0 10px 30px rgba(15,23,42,.06);margin-bottom:22px}h1{font-size:clamp(40px,5vw,70px);line-height:1.05;margin:0;color:var(--dark);letter-spacing:-.055em;font-weight:900}.highlight{position:relative;display:inline-block;color:var(--navy)}.highlight:after{content:"";position:absolute;left:0;right:0;bottom:8px;height:16px;border-radius:999px;background:rgba(255,138,61,.36);z-index:-1}.hero p{font-size:18px;line-height:1.9;color:#475569;margin:24px 0 0;max-width:680px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.trust-pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.pill{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.78);border:1px solid rgba(226,232,240,.9);color:#334155;font-weight:900;font-size:14px;box-shadow:0 8px 20px rgba(15,23,42,.04)}.status-card{background:#fff;border-radius:32px;padding:18px;box-shadow:0 24px 60px rgba(16,42,67,.15);border:1px solid rgba(255,255,255,.8)}.status-top{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;background:var(--navy);color:#fff;border-radius:24px;padding:22px}.open-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(18,184,134,.18);color:#BBF7D0;border:1px solid rgba(187,247,208,.24);padding:8px 12px;border-radius:999px;font-weight:900;font-size:13px;margin-bottom:12px}.pulse{width:9px;height:9px;border-radius:50%;background:#34D399;box-shadow:0 0 0 6px rgba(52,211,153,.16)}.status-top h3{font-size:34px;line-height:1.08;margin:0;letter-spacing:-.04em}.status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.status-mini{background:#F8FAFC;border-radius:18px;padding:14px}.status-mini strong{display:block;color:var(--dark);font-size:15px}.status-mini span{color:var(--muted);font-size:13px;display:block;margin-top:4px;line-height:1.5}.order-mode{margin-top:16px;background:#F8FAFC;border-radius:24px;padding:14px}.mode-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mode-tab{border:0;background:#fff;border-radius:999px;padding:12px;font-family:inherit;font-weight:900;color:#334155;cursor:pointer}.mode-tab.active{background:var(--green);color:#fff}.mode-note{margin:12px 4px 2px;color:#475569;line-height:1.6;font-size:14px;font-weight:700}.section{padding:70px 0}.section-head{text-align:center;max-width:820px;margin:0 auto 40px}.section-head small{color:var(--green);font-weight:900;letter-spacing:.2em;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,52px);line-height:1.13;margin:12px 0 0;color:var(--dark);letter-spacing:-.045em;font-weight:900}.section-head p{color:var(--muted);font-size:18px;line-height:1.8;margin:18px 0 0}.promo{background:var(--navy);color:#fff;border-radius:36px;padding:34px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;box-shadow:0 24px 60px rgba(16,42,67,.2);position:relative;overflow:hidden}.promo h2{margin:0;font-size:clamp(28px,3vw,42px);letter-spacing:-.04em}.promo p{margin:12px 0 0;color:#CBD5E1;line-height:1.8;font-size:17px}.countdown{background:#fff;color:var(--navy);border-radius:26px;padding:22px;text-align:center;min-width:260px;box-shadow:0 16px 40px rgba(0,0,0,.18);z-index:1}.countdown small{color:var(--muted);font-weight:900}.countdown-time{font-size:34px;font-weight:900;letter-spacing:-.03em;margin-top:6px;color:var(--orange)}.popular-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}.popular-card{background:#fff;border-radius:28px;padding:18px;display:flex;align-items:center;gap:14px;box-shadow:0 14px 36px rgba(15,23,42,.07);border:1px solid rgba(226,232,240,.8)}.popular-rank{width:48px;height:48px;border-radius:18px;background:#FFF7ED;color:var(--orange);display:grid;place-items:center;font-weight:900;font-size:20px;flex:0 0 auto}.popular-card strong{color:var(--dark);display:block;font-size:17px}.popular-card span{display:block;color:var(--muted);font-size:13px;margin-top:4px}.controls{background:#fff;border-radius:30px;padding:18px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;box-shadow:0 16px 40px rgba(15,23,42,.06);margin-bottom:26px;border:1px solid rgba(226,232,240,.85)}.search{position:relative}.search input{width:100%;border:1px solid var(--line);border-radius:999px;padding:15px 18px 15px 44px;font-family:inherit;font-size:15px;outline:none;font-weight:700}.search span{position:absolute;left:17px;top:50%;transform:translateY(-50%);color:var(--muted)}.category-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.tab{border:0;border-radius:999px;padding:13px 16px;background:#F8FAFC;color:#334155;font-weight:900;font-family:inherit;cursor:pointer}.tab.active{background:var(--navy);color:#fff}.menu-layout{display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start}.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.food-card{background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 14px 40px rgba(15,23,42,.07);border:1px solid rgba(226,232,240,.8);transition:.2s ease}.food-card:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(15,23,42,.1)}.food-img{height:170px;background:linear-gradient(135deg,#FDBA74,#F97316);position:relative;overflow:hidden}.food-img:before{content:"";position:absolute;width:160px;height:160px;border-radius:999px;background:rgba(255,255,255,.32);right:-35px;top:-25px}.food-img:after{content:attr(data-label);position:absolute;top:18px;left:18px;border-radius:999px;background:#fff;color:#E86818;padding:7px 12px;font-weight:900;font-size:13px}.food-card:nth-child(2) .food-img{background:linear-gradient(135deg,#A7F3D0,#10B981)}.food-card:nth-child(3) .food-img{background:linear-gradient(135deg,#FDE68A,#F59E0B)}.food-card:nth-child(4) .food-img{background:linear-gradient(135deg,#FBCFE8,#F472B6)}.food-card:nth-child(5) .food-img{background:linear-gradient(135deg,#BFDBFE,#3B82F6)}.food-card:nth-child(6) .food-img{background:linear-gradient(135deg,#DDD6FE,#8B5CF6)}.food-card:nth-child(7) .food-img{background:linear-gradient(135deg,#FECACA,#EF4444)}.food-card:nth-child(8) .food-img{background:linear-gradient(135deg,#BAE6FD,#0EA5E9)}.food-body{padding:22px}.food-body h3{margin:0;font-size:21px;letter-spacing:-.03em;color:var(--dark)}.food-body p{margin:10px 0 12px;color:var(--muted);line-height:1.7;font-size:15px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tag{border-radius:999px;padding:6px 9px;font-size:12px;font-weight:900;background:#F1F5F9;color:#475569}.tag.hot{background:#FFF7ED;color:#EA580C}.tag.spicy{background:#FEF2F2;color:#DC2626}.tag.new{background:#ECFDF5;color:#059669}.addon-row{background:#F8FAFC;border-radius:18px;padding:12px;margin-bottom:16px}.addon-row small{display:block;color:var(--muted);font-weight:900;margin-bottom:8px}.addon-row label{display:block;font-size:13px;font-weight:800;color:#334155;margin:6px 0;cursor:pointer}.price-row{display:flex;align-items:center;justify-content:space-between;gap:12px}.price{color:var(--orange);font-size:24px;font-weight:900}.small-btn{border:0;background:var(--navy);color:#fff;border-radius:999px;padding:11px 14px;font-weight:900;cursor:pointer;font-family:inherit;white-space:nowrap}.cart-panel{position:sticky;top:102px;background:var(--dark);color:#fff;border-radius:32px;padding:22px;box-shadow:0 24px 60px rgba(15,23,42,.2)}.cart-panel h3{font-size:24px;margin:0;letter-spacing:-.035em}.cart-hint{color:#CBD5E1;line-height:1.6;font-size:14px;margin:10px 0 16px}.cart-items{display:grid;gap:10px;min-height:80px}.cart-empty{color:#94A3B8;border:1px dashed rgba(255,255,255,.25);border-radius:18px;padding:16px;text-align:center;font-weight:800}.cart-item{background:rgba(255,255,255,.09);border-radius:18px;padding:12px;display:flex;justify-content:space-between;gap:10px;align-items:start}.cart-item strong{display:block;font-size:14px}.cart-item span{color:#CBD5E1;font-size:12px;display:block;margin-top:4px}.remove{background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:999px;width:28px;height:28px;cursor:pointer;font-weight:900}.cart-total{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;font-weight:900;font-size:18px}.cart-panel .btn{width:100%;margin-top:16px}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature-card{background:#fff;border-radius:28px;padding:24px;border:1px solid rgba(226,232,240,.8);box-shadow:0 12px 34px rgba(15,23,42,.05);position:relative}.demo-label{position:absolute;top:-10px;right:18px;background:var(--orange);color:#fff;font-size:12px;font-weight:900;padding:6px 10px;border-radius:999px;box-shadow:0 8px 16px rgba(255,138,61,.25)}.feature-icon{width:50px;height:50px;border-radius:18px;background:#ECFDF5;color:var(--green);display:grid;place-items:center;font-size:24px;margin-bottom:16px}.feature-card h3{margin:0;color:var(--dark);font-size:20px}.feature-card p{color:var(--muted);line-height:1.7;margin:10px 0 0;font-size:15px}.branches{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:start}.branch-list{display:grid;gap:14px}.branch-card{background:#fff;border-radius:24px;padding:20px;border:2px solid transparent;box-shadow:0 12px 34px rgba(15,23,42,.05);cursor:pointer;transition:.2s ease}.branch-card.active{border-color:var(--green);box-shadow:0 18px 44px rgba(18,184,134,.14)}.branch-card h3{margin:0 0 10px;color:var(--dark);font-size:20px}.branch-card p{color:var(--muted);line-height:1.6;margin:6px 0;font-size:14px}.map-panel{background:#fff;border-radius:34px;padding:22px;box-shadow:0 18px 46px rgba(15,23,42,.07)}.map-placeholder{height:300px;border-radius:26px;background:linear-gradient(90deg,rgba(16,42,67,.08) 1px,transparent 1px),linear-gradient(rgba(16,42,67,.08) 1px,transparent 1px),linear-gradient(135deg,#E0F2FE,#ECFDF5);background-size:34px 34px,34px 34px,cover;display:grid;place-items:center;color:var(--navy);text-align:center;padding:24px;position:relative;overflow:hidden}.map-pin{width:62px;height:62px;border-radius:24px;background:var(--orange);color:#fff;display:grid;place-items:center;margin:0 auto 12px;font-size:28px;box-shadow:0 16px 30px rgba(255,138,61,.32)}.map-panel h3{margin:18px 0 8px;font-size:26px;color:var(--dark);letter-spacing:-.04em}.map-panel p{color:var(--muted);line-height:1.7;margin:8px 0}.map-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.review-card{background:#fff;border-radius:30px;padding:24px;border:1px solid rgba(226,232,240,.8);box-shadow:0 14px 40px rgba(15,23,42,.06)}.stars{color:#F59E0B;letter-spacing:2px;font-size:18px;margin-bottom:12px}.review-card p{color:#475569;line-height:1.8;margin:0;font-weight:700}.review-card strong{display:block;margin-top:16px;color:var(--dark)}.split{display:grid;grid-template-columns:1fr .92fr;gap:34px;align-items:center}.update-panel{background:#fff;border-radius:36px;padding:32px;box-shadow:0 20px 54px rgba(15,23,42,.08)}.before-after{display:grid;gap:18px}.ba-card{background:#fff;border-radius:30px;padding:22px;box-shadow:0 16px 44px rgba(15,23,42,.08);border:1px solid rgba(226,232,240,.8)}.ba-card.dark{background:var(--dark);color:#fff}.ba-card h3{margin:0 0 16px;font-size:22px;letter-spacing:-.035em}.sheet-row,.site-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px;border-radius:16px;background:#F8FAFC;margin-top:10px;font-weight:900;color:#334155}.ba-card.dark .site-row{background:rgba(255,255,255,.1);color:#fff}.old-price{text-decoration:line-through;color:#94A3B8}.new-price{color:var(--orange)}.audit{background:linear-gradient(135deg,var(--navy),#0F172A 58%,#064E3B);color:#fff;border-radius:38px;padding:44px;display:grid;grid-template-columns:1fr .82fr;gap:34px;align-items:center;box-shadow:0 28px 70px rgba(16,42,67,.22)}.audit h2{margin:0;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.045em}.audit p{color:#CBD5E1;line-height:1.8;font-size:18px}.audit-list{display:grid;gap:12px}.audit-item{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border-radius:18px;padding:14px;font-weight:900}.footer{padding:40px 0}.footer-card{background:#fff;border-radius:30px;padding:28px;display:flex;justify-content:space-between;gap:24px;align-items:center;color:var(--muted);box-shadow:0 12px 34px rgba(15,23,42,.05)}.sticky-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:90;width:min(760px,calc(100% - 28px));background:rgba(15,23,42,.94);color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:10px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;box-shadow:0 22px 60px rgba(0,0,0,.28);backdrop-filter:blur(14px)}.sticky-bar-text{padding-left:16px;font-weight:900;font-size:14px}.sticky-bar-text span{color:#86EFAC}@media(max-width:1080px){.nav-links{display:none}.hero-grid,.split,.audit,.branches,.menu-layout{grid-template-columns:1fr}.cart-panel{position:relative;top:auto}.menu-grid,.reviews,.popular-strip{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.promo{grid-template-columns:1fr}}@media(max-width:680px){.container{width:min(100% - 28px,1180px)}.ribbon{display:none}.hero{padding:44px 0 34px}.hero-actions .btn,.map-actions .btn{width:100%}.section{padding:52px 0}.status-top,.promo,.audit,.update-panel{padding:24px;border-radius:28px}.status-grid,.menu-grid,.reviews,.popular-strip,.feature-grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}.category-tabs{justify-content:flex-start}.mode-tabs{grid-template-columns:1fr}.footer-card{flex-direction:column;align-items:flex-start}.sticky-bar{border-radius:28px;grid-template-columns:1fr}.sticky-bar .btn{width:100%}}
+    /* ── Root ── */
+    :root {
+      --dark:   #0D1C10;
+      --green:  #2C7A50;
+      --mint:   #A8D5BC;
+      --amber:  #C8783C;
+      --ambL:   #E09B60;
+      --cream:  #F7F4EF;
+      --white:  #FFFFFF;
+      --text:   #1A2820;
+      --muted:  #5A7866;
+      --line:   #D4E4DA;
+      --sh-sm:  0 2px 8px  rgba(13,28,16,.08);
+      --sh:     0 8px 24px rgba(13,28,16,.12);
+      --sh-lg:  0 20px 52px rgba(13,28,16,.18);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, 'Noto Sans TC', -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 88px;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+    button { font-family: inherit; }
+
+    .container { width: min(1140px, calc(100% - 40px)); margin: 0 auto; }
+
+    /* ── Scissors Background ── */
+    .scissors-bg {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 0; overflow: hidden;
+    }
+    .sc {
+      position: absolute; color: var(--green); opacity: 0;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .sc { opacity: .045; }
+      .sc1 { width:72px; top:7%;  left:4%;  animation: scf 20s ease-in-out infinite; }
+      .sc2 { width:48px; top:27%; right:6%; animation: scd 26s ease-in-out infinite 4s; }
+      .sc3 { width:62px; top:50%; left:9%;  animation: scf 18s ease-in-out infinite 2s reverse; }
+      .sc4 { width:40px; top:70%; right:12%;animation: scd 22s ease-in-out infinite; }
+      .sc5 { width:66px; top:87%; left:37%; animation: scf 28s ease-in-out infinite 6s; }
+      .sc6 { width:54px; top:17%; left:54%; animation: scd 24s ease-in-out infinite 8s reverse; }
+      .sc7 { width:44px; top:43%; right:21%;animation: scf 20s ease-in-out infinite 3s; }
+    }
+    @keyframes scf {
+      0%,100% { transform: translateY(0) rotate(0deg); }
+      25%      { transform: translateY(-20px) rotate(12deg); }
+      75%      { transform: translateY(-26px) rotate(-9deg); }
+    }
+    @keyframes scd {
+      0%,100% { transform: translate(0,0) rotate(0deg); }
+      30%     { transform: translate(14px,-18px) rotate(16deg); }
+      65%     { transform: translate(-10px,-8px) rotate(-11deg); }
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      border: none; border-radius: 999px;
+      padding: 11px 20px; font-family: inherit; font-size: 14px; font-weight: 700;
+      cursor: pointer; transition: transform .18s ease, box-shadow .18s ease;
+      white-space: nowrap; text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-wa   { background:#25D366; color:#fff; box-shadow:0 6px 20px rgba(37,211,102,.28); }
+    .btn-wa:hover { box-shadow:0 10px 28px rgba(37,211,102,.38); }
+    .btn-dark { background:var(--dark); color:#fff; box-shadow:var(--sh); }
+    .btn-outline { background:transparent; color:var(--dark); border:2px solid var(--line); }
+    .btn-outline:hover { border-color:var(--green); color:var(--green); }
+    .btn-amber { background:var(--amber); color:#fff; box-shadow:0 6px 20px rgba(200,120,60,.28); }
+    .btn-lg { padding:14px 28px; font-size:15px; }
+    .btn-white { background:#fff; color:#16A34A; box-shadow:0 8px 24px rgba(0,0,0,.18); }
+    .btn-ghost { background:rgba(255,255,255,.15); color:#fff; border:2px solid rgba(255,255,255,.5); }
+
+    /* ── Header ── */
+    .header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,244,239,.95);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex; align-items: center; padding: 13px 0; gap: 16px;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; flex-shrink: 0; }
+    .brand-mark {
+      width: 46px; height: 46px; background: var(--dark); border-radius: 13px;
+      display: grid; place-items: center; flex-shrink: 0;
+    }
+    .brand-name { font-weight: 900; font-size: 17px; color: var(--dark); line-height: 1.2; white-space: nowrap; }
+    .brand-name small { display: block; font-size: 12px; font-weight: 500; color: var(--muted); }
+    .nav-links {
+      display: flex; gap: 24px; font-size: 14px; font-weight: 700;
+      color: var(--muted); margin-left: auto; align-items: center;
+    }
+    .nav-links a:hover { color: var(--green); }
+    .nav-wa { margin-left: 12px; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 6px; margin-left: auto;
+    }
+    .hamburger span { display:block; width:22px; height:2px; background:var(--dark); border-radius:2px; transition:.3s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-nav { display:none; flex-direction:column; border-top:1px solid var(--line); padding:4px 0 12px; background:rgba(247,244,239,.98); }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { padding:13px 20px; font-size:16px; font-weight:700; color:var(--text); border-bottom:1px solid var(--line); }
+    .mobile-nav a:last-of-type { border-bottom:none; }
+    .mobile-nav-wa { padding: 14px 20px; }
+
+    /* ── Hero ── */
+    .hero { position: relative; z-index: 1; padding: 58px 0 50px; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      padding: 8px 14px; font-size: 13px; font-weight: 700; color: var(--green);
+      box-shadow: var(--sh-sm); margin-bottom: 18px;
+    }
+    .pulse {
+      width: 8px; height: 8px; background: #22C55E; border-radius: 50%;
+      animation: pulseRing 2s ease-in-out infinite;
+    }
+    @keyframes pulseRing {
+      0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,.5); }
+      50%      { box-shadow: 0 0 0 7px rgba(34,197,94,0); }
+    }
+    .hero h1 {
+      font-size: clamp(34px, 4.6vw, 60px); font-weight: 900;
+      line-height: 1.09; letter-spacing: -.044em; color: var(--dark); margin-bottom: 16px;
+    }
+    .hero h1 em { font-style: normal; color: var(--green); }
+    .hero-desc { font-size: 17px; color: var(--muted); line-height: 1.85; margin-bottom: 22px; max-width: 520px; }
+    .hero-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 26px; }
+    .hero-pill {
+      background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      padding: 7px 13px; font-size: 13px; font-weight: 700; color: var(--text); box-shadow: var(--sh-sm);
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    /* hero image */
+    .hero-img-wrap { position: relative; }
+    .hero-photo {
+      width: 100%; border-radius: 28px; object-fit: cover;
+      aspect-ratio: 4/5; box-shadow: var(--sh-lg); display: block;
+      background: linear-gradient(135deg, #C8E6D8, #A8D5BC);
+      min-height: 200px;
+    }
+    .hero-photo-placeholder {
+      width:100%; border-radius:28px; aspect-ratio:4/5;
+      background: linear-gradient(135deg,#1A3A28 0%,#2C7A50 60%,#3D9969 100%);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      gap:12px; box-shadow: var(--sh-lg);
+    }
+    .hero-photo-placeholder svg { opacity:.5; }
+    .hero-photo-placeholder p { color:rgba(255,255,255,.5); font-size:13px; font-weight:700; }
+    .hero-float-card {
+      position: absolute; bottom: -18px; left: -20px;
+      background: var(--dark); color: #fff; border-radius: 20px;
+      padding: 16px 20px; box-shadow: var(--sh-lg); min-width: 148px;
+    }
+    .hero-float-card strong { display:block; font-size:28px; font-weight:900; color:var(--ambL); letter-spacing:-.04em; line-height:1; margin-bottom:4px; }
+    .hero-float-card span { font-size:13px; color:rgba(255,255,255,.6); }
+
+    /* ── Quick Info ── */
+    .quick-info { position: relative; z-index: 1; padding: 38px 0 62px; }
+    .quick-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+    .quick-card {
+      background: #fff; border-radius: 20px; padding: 22px 16px; text-align: center;
+      border: 1px solid var(--line); box-shadow: var(--sh-sm); transition: transform .2s ease;
+    }
+    .quick-card:hover { transform: translateY(-3px); }
+    .quick-icon { width:48px; height:48px; border-radius:14px; background:#ECFDF5; display:grid; place-items:center; font-size:22px; margin:0 auto 12px; }
+    .quick-card strong { display:block; font-size:15px; font-weight:900; color:var(--dark); margin-bottom:5px; }
+    .quick-card p { font-size:13px; color:var(--muted); line-height:1.5; }
+
+    /* ── Section Base ── */
+    .section { position: relative; z-index: 1; padding: 72px 0; }
+    .section-alt { background: #fff; }
+    .section-dark { background: var(--dark); }
+    .section-head { text-align: center; max-width: 680px; margin: 0 auto 48px; }
+    .section-tag { display:inline-block; font-size:11px; font-weight:900; letter-spacing:.18em; text-transform:uppercase; color:var(--green); margin-bottom:10px; }
+    .section-dark .section-tag { color: var(--mint); }
+    .section-head h2 { font-size:clamp(26px,3.2vw,42px); font-weight:900; letter-spacing:-.04em; line-height:1.15; color:var(--dark); }
+    .section-dark .section-head h2 { color: #fff; }
+    .section-head p { font-size:16px; color:var(--muted); line-height:1.8; margin-top:12px; }
+    .section-dark .section-head p { color: rgba(255,255,255,.5); }
+
+    /* ── Pricing ── */
+    .price-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .price-card {
+      background: #fff; border-radius: 28px; padding: 36px 26px; text-align: center;
+      border: 2px solid var(--line); box-shadow: var(--sh); transition: transform .2s ease, border-color .2s ease;
+    }
+    .price-card:hover { transform: translateY(-5px); }
+    .price-card.featured { border-color: var(--green); background: linear-gradient(155deg,#F0FAF5,#fff 65%); }
+    .price-emoji { font-size: 38px; margin-bottom: 14px; }
+    .price-card h3 { font-size:21px; font-weight:900; color:var(--dark); margin-bottom:6px; }
+    .price-sub { font-size:13px; font-weight:700; color:var(--muted); margin-bottom:18px; }
+    .price-amount { font-size:54px; font-weight:900; color:var(--amber); line-height:1; letter-spacing:-.05em; }
+    .price-amount sup { font-size:26px; vertical-align:top; margin-top:10px; display:inline-block; }
+    .price-feats { list-style:none; margin:18px 0 0; display:grid; gap:9px; }
+    .price-feats li { font-size:14px; color:var(--muted); display:flex; align-items:center; justify-content:center; gap:7px; }
+    .price-feats li::before { content:"✓"; color:var(--green); font-weight:900; }
+    .price-footer { margin-top:36px; padding-top:26px; border-top:1px solid var(--line); text-align:center; }
+    .price-footer p { font-size:13px; color:var(--muted); line-height:1.7; }
+    .payment-row { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:12px; }
+    .pay-badge { background:var(--cream); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:700; color:var(--text); }
+    .price-only-note { margin-top:12px; font-size:13px; color:var(--muted); font-style:italic; }
+
+    /* ── Calendar ── */
+    .calendar-container { max-width: 720px; margin: 0 auto; }
+    .cal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+    .cal-title { font-size:22px; font-weight:900; color:var(--dark); }
+    .cal-nav-btns { display:flex; gap:8px; }
+    .cal-nav-btn {
+      width:38px; height:38px; border-radius:10px; border:1px solid var(--line);
+      background:#fff; cursor:pointer; font-size:16px; display:grid; place-items:center; transition:.18s; color:var(--dark);
+    }
+    .cal-nav-btn:hover { background:var(--dark); color:#fff; border-color:var(--dark); }
+    .cal-board { background:#fff; border-radius:24px; padding:24px; border:1px solid var(--line); box-shadow:var(--sh); }
+    .cal-week-row { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:8px; }
+    .cal-wday { text-align:center; font-size:11px; font-weight:900; letter-spacing:.04em; padding:6px 0; color:var(--muted); }
+    .cal-wday.sun { color:#EF4444; }
+    .cal-wday.sat { color:#3B82F6; }
+    .cal-days-row { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+    .cal-cell {
+      aspect-ratio:1; border-radius:10px; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; font-size:14px; font-weight:700; transition:.15s; position:relative;
+    }
+    .cal-cell.empty { pointer-events:none; }
+    .cal-cell.open  { background:#ECFDF5; color:#15803D; }
+    .cal-cell.rest  { background:#FFF3E0; color:#C2410C; font-weight:900; }
+    .cal-cell.past  { opacity:.35; }
+    .cal-cell.today::after { content:''; position:absolute; inset:0; border-radius:10px; border:2px solid var(--green); pointer-events:none; }
+    .cell-status { font-size:9px; font-weight:900; margin-top:1px; letter-spacing:.02em; }
+    .cal-cell.open .cell-status { color:#16A34A; }
+    .cal-cell.rest .cell-status { color:#EA580C; }
+    .cal-legend { display:flex; gap:18px; justify-content:center; margin-top:16px; font-size:13px; font-weight:700; flex-wrap:wrap; }
+    .legend-item { display:flex; align-items:center; gap:6px; color:var(--muted); }
+    .legend-dot { width:14px; height:14px; border-radius:5px; }
+    .legend-dot.open    { background:#ECFDF5; border:1px solid #86EFAC; }
+    .legend-dot.rest    { background:#FFF3E0; border:1px solid #FED7AA; }
+    .legend-dot.todayD  { background:transparent; border:2px solid var(--green); }
+    .cal-note { text-align:center; margin-top:16px; font-size:13px; color:var(--muted); line-height:1.8; }
+
+    /* ── Scope ── */
+    .scope-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .scope-card { background:#fff; border-radius:24px; padding:28px 22px; border:1px solid var(--line); box-shadow:var(--sh-sm); }
+    .scope-head { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+    .scope-icon { width:46px; height:46px; border-radius:13px; display:grid; place-items:center; font-size:22px; flex-shrink:0; }
+    .scope-icon.g { background:#ECFDF5; }
+    .scope-icon.r { background:#FEF2F2; }
+    .scope-icon.b { background:#EFF6FF; }
+    .scope-card h3 { font-size:18px; font-weight:900; color:var(--dark); }
+    .scope-list { list-style:none; display:grid; gap:10px; }
+    .scope-list li { display:flex; align-items:center; gap:10px; font-size:14px; font-weight:600; color:var(--text); line-height:1.4; }
+    .sdot { width:22px; height:22px; border-radius:7px; display:grid; place-items:center; font-size:11px; font-weight:900; flex-shrink:0; }
+    .sdot.y { background:#ECFDF5; color:#16A34A; }
+    .sdot.n { background:#FEF2F2; color:#DC2626; }
+    .sdot.a { background:#EFF6FF; color:#2563EB; }
+
+    /* ── Process ── */
+    .process-wrap { position:relative; }
+    .process-line {
+      position:absolute; top:36px; left:calc(12.5% + 24px); right:calc(12.5% + 24px);
+      height:2px; background:linear-gradient(90deg,var(--mint),var(--green)); z-index:0;
+    }
+    .process-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; position:relative; z-index:1; }
+    .process-step { text-align:center; }
+    .process-num {
+      width:72px; height:72px; border-radius:50%; background:var(--dark); color:#fff;
+      display:flex; align-items:center; justify-content:center; font-size:26px;
+      margin:0 auto 16px; box-shadow:var(--sh-lg);
+    }
+    .process-step h3 { font-size:16px; font-weight:900; color:var(--dark); margin-bottom:6px; }
+    .process-step p  { font-size:13px; color:var(--muted); line-height:1.65; }
+
+    /* ── Gallery ── */
+    .gallery-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .gallery-card { border-radius:24px; overflow:hidden; box-shadow:var(--sh-lg); background:var(--dark); }
+    .gallery-card img { width:100%; height:380px; object-fit:cover; display:block; transition:transform .5s ease; background:linear-gradient(135deg,#1A3A28,#2C7A50); }
+    .gallery-card:hover img { transform:scale(1.04); }
+    .gallery-caption { padding:14px 18px; background:var(--dark); color:#fff; font-size:14px; font-weight:700; }
+
+    /* ── Why ── */
+    .why-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+    .why-card { background:rgba(255,255,255,.07); border-radius:22px; padding:28px 20px; border:1px solid rgba(255,255,255,.1); text-align:center; }
+    .why-icon { font-size:38px; margin-bottom:14px; }
+    .why-card h3 { font-size:17px; font-weight:900; color:#fff; margin-bottom:8px; }
+    .why-card p  { font-size:13px; color:rgba(255,255,255,.55); line-height:1.7; }
+
+    /* ── Location ── */
+    .location-grid { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+    .loc-card h3 { font-size:25px; font-weight:900; color:var(--dark); margin-bottom:22px; }
+    .loc-row { display:flex; gap:14px; padding:15px 0; border-bottom:1px solid var(--line); }
+    .loc-row:last-of-type { border-bottom:none; padding-bottom:0; }
+    .loc-ico { width:42px; height:42px; border-radius:12px; background:var(--cream); border:1px solid var(--line); display:grid; place-items:center; font-size:18px; flex-shrink:0; }
+    .loc-row strong { display:block; font-size:15px; font-weight:700; color:var(--dark); margin-bottom:4px; }
+    .loc-row span   { font-size:14px; color:var(--muted); line-height:1.6; }
+    .loc-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
+    .map-panel { background:#fff; border-radius:24px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--sh); }
+    .map-visual {
+      height:240px;
+      background:
+        repeating-linear-gradient(0deg,rgba(168,213,188,.22) 0,rgba(168,213,188,.22) 1px,transparent 1px,transparent 30px),
+        repeating-linear-gradient(90deg,rgba(168,213,188,.22) 0,rgba(168,213,188,.22) 1px,transparent 1px,transparent 30px),
+        linear-gradient(155deg,#DFF0E9,#C4DDD1);
+      display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;
+    }
+    .map-pin-circle { width:54px; height:54px; border-radius:50%; background:var(--amber); display:grid; place-items:center; font-size:24px; box-shadow:0 8px 24px rgba(200,120,60,.35); }
+    .map-visual p { font-weight:900; color:var(--dark); font-size:17px; }
+    .map-visual small { color:var(--muted); font-size:13px; }
+    .map-foot { padding:16px 20px; background:#fff; border-top:1px solid var(--line); }
+    .map-foot p { font-size:13px; color:var(--muted); margin-bottom:12px; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width:720px; margin:0 auto; display:grid; gap:10px; }
+    .faq-item { background:#fff; border-radius:16px; border:1px solid var(--line); overflow:hidden; }
+    .faq-q {
+      width:100%; background:none; border:none; padding:18px 20px; text-align:left;
+      font-family:inherit; font-size:15px; font-weight:700; color:var(--dark);
+      cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:16px; transition:background .15s;
+    }
+    .faq-q:hover { background:var(--cream); }
+    .faq-chevron { font-size:15px; color:var(--muted); transition:transform .3s ease; flex-shrink:0; }
+    .faq-item.open .faq-chevron { transform:rotate(180deg); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .32s ease; }
+    .faq-a-inner { padding:2px 20px 18px; font-size:14px; color:var(--muted); line-height:1.85; }
+
+    /* ── Anniversary ── */
+    .anniv-band {
+      background:linear-gradient(135deg,#0D1C10,#1A3A28 50%,#0D2518);
+      border-radius:32px; padding:52px 44px; text-align:center; position:relative; overflow:hidden;
+    }
+    .anniv-band::before {
+      content:'3'; position:absolute; font-size:320px; font-weight:900;
+      color:rgba(255,255,255,.02); top:-100px; left:50%; transform:translateX(-50%);
+      line-height:1; pointer-events:none; letter-spacing:-.05em; user-select:none;
+    }
+    .anniv-label {
+      display:inline-block; background:rgba(200,120,60,.2); border:1px solid rgba(200,120,60,.35);
+      color:var(--ambL); border-radius:999px; padding:8px 16px;
+      font-size:12px; font-weight:900; letter-spacing:.15em; text-transform:uppercase; margin-bottom:18px;
+    }
+    .anniv-band h2 { font-size:clamp(26px,3.5vw,40px); font-weight:900; color:#fff; letter-spacing:-.04em; margin-bottom:16px; }
+    .anniv-band p  { font-size:17px; color:rgba(255,255,255,.62); line-height:1.9; max-width:520px; margin:0 auto; }
+
+    /* ── Final CTA ── */
+    .cta-wrap {
+      background:linear-gradient(135deg,#128C7E,#25D366 60%,#34D058);
+      border-radius:32px; padding:56px 44px; text-align:center; position:relative; overflow:hidden;
+    }
+    .cta-wrap::before {
+      content:''; position:absolute; width:350px; height:350px; border-radius:50%;
+      background:rgba(255,255,255,.1); top:-150px; right:-100px; pointer-events:none;
+    }
+    .cta-wrap h2 { font-size:clamp(26px,3.8vw,46px); font-weight:900; color:#fff; letter-spacing:-.045em; margin-bottom:14px; }
+    .cta-wrap p  { font-size:17px; color:rgba(255,255,255,.82); margin-bottom:32px; line-height:1.8; }
+    .cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+    /* ── Footer ── */
+    .footer { position:relative; z-index:1; padding:36px 0; }
+    .footer-inner {
+      background:#fff; border-radius:20px; padding:22px 28px;
+      display:flex; align-items:center; justify-content:space-between;
+      flex-wrap:wrap; gap:16px; border:1px solid var(--line);
+    }
+    .footer-brand strong { font-size:16px; font-weight:900; color:var(--dark); }
+    .footer-brand p { font-size:13px; color:var(--muted); margin-top:4px; }
+    .footer-copy { font-size:12px; color:var(--muted); }
+
+    /* ── Sticky WA Bar ── */
+    .sticky-bar {
+      position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+      z-index:999; width:min(460px,calc(100% - 32px));
+      background:rgba(13,28,16,.94); border:1px solid rgba(255,255,255,.1);
+      border-radius:999px; padding:8px 8px 8px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      box-shadow:0 16px 48px rgba(0,0,0,.35); backdrop-filter:blur(16px);
+    }
+    .sticky-bar-text { font-size:13px; font-weight:700; color:rgba(255,255,255,.85); }
+    .sticky-bar-text span { color:#86EFAC; }
+
+    /* ── Responsive ── */
+    @media (max-width:1024px) {
+      .nav-links, .nav-wa { display:none; }
+      .hamburger { display:flex; }
+      .quick-grid { grid-template-columns:repeat(2,1fr); }
+      .process-line { display:none; }
+      .process-grid { grid-template-columns:repeat(2,1fr); }
+      .why-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:768px) {
+      .hero-grid { grid-template-columns:1fr; }
+      .hero-img-wrap { order:-1; }
+      .hero-photo { aspect-ratio:16/9; }
+      .hero-float-card { left:12px; bottom:-14px; }
+      .price-grid { grid-template-columns:1fr; max-width:360px; margin-left:auto; margin-right:auto; }
+      .scope-grid { grid-template-columns:1fr; }
+      .gallery-grid { grid-template-columns:1fr; }
+      .gallery-card img { height:260px; }
+      .location-grid { grid-template-columns:1fr; }
+      .anniv-band { padding:36px 22px; }
+      .anniv-band::before { font-size:180px; }
+      .cta-wrap { padding:36px 22px; }
+      .section { padding:52px 0; }
+      .footer-inner { flex-direction:column; align-items:flex-start; }
+    }
+    @media (max-width:480px) {
+      .hero-actions .btn { width:100%; justify-content:center; }
+      .loc-actions .btn  { width:100%; }
+      .cta-btns .btn     { width:100%; }
+      .hero h1 { font-size:30px; }
+    }
   </style>
 </head>
 <body>
-  <div class="ribbon"><div class="container"><div>🍱 AIDEN 餐飲網站 Demo v2｜餐牌、分店、WhatsApp、搜尋、查詢清單、Google Sheet 更新</div><div>今日營業中｜07:00 - 22:00｜最後落單 21:30</div></div></div>
-  <header class="header"><div class="container nav"><a href="#top" class="brand"><div class="brand-mark">H</div><div>Happy Bowl<small>餐飲網站 Demo v2</small></div></a><nav class="nav-links"><a href="#popular">人氣推介</a><a href="#menu">餐牌</a><a href="#features">功能</a><a href="#branches">分店</a><a href="#update">可更新內容</a></nav><a id="headerWhatsapp" href="https://wa.me/85200001111" target="_blank" class="btn btn-primary">WhatsApp 查詢</a></div></header>
-  <main id="top">
-    <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">🍽️ Restaurant Website Demo v2</div><h1>由餐牌展示，升級成可以 <span class="highlight">帶來查詢</span> 嘅餐飲網站</h1><p>呢個 Demo 適合小餐廳、茶餐廳、咖啡店、外賣店及食品品牌。客人可以搜尋菜式、選擇堂食／自取／外賣、加入查詢清單，再一鍵發送 WhatsApp。</p><div class="hero-actions"><a href="#menu" class="btn btn-dark">查看互動餐牌</a><a id="heroWhatsapp" href="https://wa.me/85200001111" target="_blank" class="btn btn-light">WhatsApp 即時查詢</a></div><div class="trust-pills"><span class="pill">今日營業狀態</span><span class="pill">菜式搜尋</span><span class="pill">分店 WhatsApp 自動切換</span><span class="pill">Google Sheet 更新概念</span></div></div><div class="status-card"><div class="status-top"><div><div class="open-badge"><span class="pulse"></span> 今日營業中</div><h3>07:00 - 22:00<br>最後落單 21:30</h3></div><div style="font-size:46px;">🍛</div></div><div class="status-grid"><div class="status-mini"><strong>等候時間</strong><span>自取約 15-20 分鐘</span></div><div class="status-mini"><strong>熱門時段</strong><span>12:00 - 14:00</span></div><div class="status-mini"><strong>目前分店</strong><span id="selectedBranchMini">旺角店</span></div></div><div class="order-mode"><div class="mode-tabs"><button class="mode-tab active" data-mode="堂食">堂食</button><button class="mode-tab" data-mode="自取">自取</button><button class="mode-tab" data-mode="外賣">外賣</button></div><div class="mode-note" id="modeNote">歡迎到店用餐，繁忙時間建議先 WhatsApp 查詢座位。</div></div></div></div></section>
-    <section class="section"><div class="container promo"><div><h2>午市套餐限時優惠</h2><p>優惠 Banner 可以用作午市、下午茶、節日到會、盆菜預訂。加埋倒數時間，可以提升即時查詢意欲。</p></div><div class="countdown"><small>優惠尚餘</small><div class="countdown-time" id="countdown">02:35:20</div></div></div></section>
-    <section class="section" id="popular"><div class="container"><div class="section-head"><small>Best Sellers</small><h2>本店人氣推介</h2><p>幫客人減少選擇困難，亦方便餐廳主力推廣高人氣或高毛利菜式。</p></div><div class="popular-strip"><div class="popular-card"><div class="popular-rank">1</div><div><strong>招牌焗豬扒飯</strong><span>人氣 No.1｜午市熱賣</span></div></div><div class="popular-card"><div class="popular-rank">2</div><div><strong>海南雞飯</strong><span>清爽穩陣｜回頭客推介</span></div></div><div class="popular-card"><div class="popular-rank">3</div><div><strong>咖喱牛腩飯</strong><span>店長推介｜濃味之選</span></div></div></div></div></section>
-    <section class="section" id="menu"><div class="container"><div class="section-head"><small>Interactive Menu</small><h2>互動餐牌：搜尋、分類、加配、WhatsApp 查詢</h2><p>呢個比普通 PDF 餐牌更有用。客人可以即時搜尋、揀菜式、加配飲品或小食，最後一鍵發 WhatsApp 查詢。</p></div><div class="controls"><div class="search"><span>🔎</span><input id="searchInput" type="text" placeholder="搜尋菜式：豬扒 / 雞飯 / 奶茶 / 咖喱" /></div><div class="category-tabs"><button class="tab active" data-category="all">全部</button><button class="tab" data-category="rice">飯餐</button><button class="tab" data-category="noodle">粉麵</button><button class="tab" data-category="drink">飲品</button><button class="tab" data-category="snack">小食</button></div></div><div class="menu-layout"><div class="menu-grid" id="menuGrid"></div><aside class="cart-panel"><h3>查詢清單</h3><p class="cart-hint">呢個唔係複雜網購系統，而係輕量化 WhatsApp 查詢，最適合小餐廳起步。</p><div class="cart-items" id="cartItems"><div class="cart-empty">未加入餐品</div></div><div class="cart-total"><span>估算總額</span><span id="cartTotal">HK$0</span></div><button class="btn btn-primary" id="sendWhatsapp">WhatsApp 發送查詢</button><button class="btn btn-light" id="clearCart">清空清單</button></aside></div></div></section>
-    <section class="section" id="features"><div class="container"><div class="section-head"><small>Useful Functions</small><h2>餐飲網站最值得放嘅功能</h2><p>每一個功能都係為咗減少客人重複查詢、提升信任感、增加落單機會。</p></div><div class="feature-grid"><div class="feature-card"><div class="demo-label">可售賣</div><div class="feature-icon">🟢</div><h3>今日營業狀態</h3><p>即時顯示營業中、營業時間、最後落單時間，減少客人打電話查詢。</p></div><div class="feature-card"><div class="demo-label">轉化</div><div class="feature-icon">🛒</div><h3>查詢清單</h3><p>客人加入餐品後，一鍵發送 WhatsApp，做到輕量化落單體驗。</p></div><div class="feature-card"><div class="demo-label">多分店</div><div class="feature-icon">📍</div><h3>分店 WhatsApp 切換</h3><p>客人選擇分店後，查詢按鈕自動連去對應分店電話。</p></div><div class="feature-card"><div class="demo-label">後台</div><div class="feature-icon">🧾</div><h3>Google Sheet 更新</h3><p>老闆改表格就可以更新餐牌、價錢、優惠及分店資料。</p></div></div></div></section>
-    <section class="section" id="branches"><div class="container"><div class="section-head"><small>Branches</small><h2>選擇分店後，WhatsApp 自動切換</h2><p>多分店餐廳最實用。每間分店可以有不同地址、營業時間、Google Map 及 WhatsApp 電話。</p></div><div class="branches"><div class="branch-list"><div class="branch-card active" data-branch="旺角店" data-phone="85200001111" data-address="旺角彌敦道 123 號地下" data-hours="07:00 - 22:00"><h3>旺角店</h3><p>地址：旺角彌敦道 123 號地下</p><p>營業時間：07:00 - 22:00</p><p>電話：+852 0000 1111</p></div><div class="branch-card" data-branch="荃灣店" data-phone="85200002222" data-address="荃灣青山公路 88 號地下" data-hours="07:30 - 21:30"><h3>荃灣店</h3><p>地址：荃灣青山公路 88 號地下</p><p>營業時間：07:30 - 21:30</p><p>電話：+852 0000 2222</p></div><div class="branch-card" data-branch="沙田店" data-phone="85200003333" data-address="沙田中心商場 2 樓 208 號舖" data-hours="08:00 - 22:00"><h3>沙田店</h3><p>地址：沙田中心商場 2 樓 208 號地下</p><p>營業時間：08:00 - 22:00</p><p>電話：+852 0000 3333</p></div></div><div class="map-panel"><div class="map-placeholder"><div><div class="map-pin">📍</div><strong id="mapBranch" style="font-size:24px;">旺角店</strong><div style="margin-top:8px;color:#475569;font-weight:800;">Google Map 可嵌入於此</div></div></div><h3 id="branchTitle">旺角店</h3><p id="branchAddress">地址：旺角彌敦道 123 號地下</p><p id="branchHours">營業時間：07:00 - 22:00</p><div class="map-actions"><a id="branchWhatsapp" href="https://wa.me/85200001111" target="_blank" class="btn btn-primary">WhatsApp 此分店</a><a href="#" class="btn btn-light">開啟 Google Map</a></div></div></div></div></section>
-    <section class="section"><div class="container"><div class="section-head"><small>Customer Reviews</small><h2>客戶評價區，增加第一次到訪信任感</h2><p>小餐廳網站未必需要好複雜，但一定要有令人安心嘅元素，例如評價、地址、營業時間、清楚餐牌。</p></div><div class="reviews"><div class="review-card"><div class="stars">★★★★★</div><p>「午市套餐清楚，WhatsApp 預訂好方便，去到唔使等太耐。」</p><strong>— 陳小姐｜附近上班族</strong></div><div class="review-card"><div class="stars">★★★★★</div><p>「第一次去都搵到地址，網站有 Map 同營業時間，資料好清晰。」</p><strong>— Wong 先生｜新客人</strong></div><div class="review-card"><div class="stars">★★★★★</div><p>「餐牌有分類同價錢，唔使逐張相喺 IG 入面搵，好慳時間。」</p><strong>— Mandy｜回頭客</strong></div></div></div></section>
-    <section class="section" id="update"><div class="container split"><div class="update-panel"><div class="eyebrow">🧩 Smart Update</div><h2 style="font-size:clamp(32px,4vw,52px);line-height:1.12;margin:0;color:var(--dark);letter-spacing:-.045em;">老闆只需改 Google Sheet，網站內容就可以同步更新</h2><p style="color:var(--muted);font-size:18px;line-height:1.8;margin-top:18px;">呢個係 AIDEN Web Studio 最應該主打嘅差異位。你唔係只賣網站，而係賣一個「小老闆自己都管理到」嘅簡單內容系統。</p><div class="trust-pills"><span class="pill">改餐牌</span><span class="pill">改價錢</span><span class="pill">開關優惠</span><span class="pill">改分店電話</span></div></div><div class="before-after"><div class="ba-card"><h3>Before：老闆改 Google Sheet</h3><div class="sheet-row"><span>招牌焗豬扒飯</span><span><span class="old-price">HK$58</span> → <span class="new-price">HK$60</span></span></div><div class="sheet-row"><span>午市優惠</span><span>TRUE</span></div><div class="sheet-row"><span>旺角店 WhatsApp</span><span>0000 1111</span></div></div><div class="ba-card dark"><h3>After：網站即時反映</h3><div class="site-row"><span>招牌焗豬扒飯</span><span class="new-price">HK$60</span></div><div class="site-row"><span>優惠 Banner</span><span>顯示中</span></div><div class="site-row"><span>旺角店查詢</span><span>已連接</span></div></div></div></div></section>
-    <section class="section" id="contact"><div class="container audit"><div><h2>想將你間餐廳變成呢類網站？</h2><p>可以先傳你現有 IG、餐牌相、Google Map 店舖頁面，AIDEN 會幫你簡單分析適合做一頁式網站、完整品牌網站，定係加埋可更新餐牌功能。</p><div class="hero-actions"><a id="auditWhatsapp" href="https://wa.me/85200001111" target="_blank" class="btn btn-primary">WhatsApp 免費評估</a><a href="#menu" class="btn btn-light">再睇互動餐牌</a></div></div><div class="audit-list"><div class="audit-item">✅ 餐牌是否清楚</div><div class="audit-item">✅ 手機版是否易睇</div><div class="audit-item">✅ 客人是否容易聯絡</div><div class="audit-item">✅ 分店地址是否清楚</div><div class="audit-item">✅ 是否適合 Google Sheet 更新</div></div></div></section>
-  </main>
-  <footer class="footer"><div class="container footer-card"><div><strong style="color:var(--dark);font-size:18px;">Happy Bowl 餐飲網站 Demo v2</strong><div>Designed by AIDEN Web Studio｜AI-powered websites for small businesses.</div></div><div>© 2026 AIDEN Web Studio Demo. All rights reserved.</div></div></footer>
-  <div class="sticky-bar"><div class="sticky-bar-text">已選分店：<span id="stickyBranch">旺角店</span>｜查詢清單：<span id="stickyCount">0</span> 件</div><a id="stickyWhatsapp" href="https://wa.me/85200001111" target="_blank" class="btn btn-primary">WhatsApp 查詢</a></div>
-  <script>
-    const foods=[['rice','招牌焗豬扒飯',58,'人氣 No.1','香濃茄汁配厚切豬扒，適合作為網站主打招牌產品。',['人氣','含奶類','午市'],['+HK$8 加凍飲','+HK$12 加小食']],['rice','海南雞飯',55,'午市熱賣','嫩滑雞件配油飯及秘製醬汁，清爽又飽肚。',['熱賣','少油'],['+HK$10 加例湯','+HK$8 加凍飲']],['rice','咖喱牛腩飯',62,'店長推介','濃厚咖喱配慢煮牛腩，適合用食物相片突出吸引力。',['微辣','推介'],['+HK$8 加凍飲','+HK$8 加煎蛋']],['noodle','沙嗲牛肉公仔麵',42,'早餐人氣','早餐及下午茶人氣選擇，可加入時段限定標籤。',['早餐','下午茶'],['+HK$15 火腿奄列','+HK$6 熱飲']],['noodle','鮮蝦雲吞麵',48,'清爽','清楚分類粉麵、飯餐、飲品，減少客人查詢時間。',['粉麵','清湯'],['+HK$10 加菜心','+HK$8 加凍飲']],['drink','凍檸茶',18,'飲品','套餐可加配飲品，價錢及描述可由後台快速更新。',['凍飲','港式'],['少甜','走冰']],['drink','港式奶茶',18,'經典','可加入凍熱選項、少甜、走冰等備註，方便 WhatsApp 查詢。',['含奶類','經典'],['熱飲','少甜']],['snack','炸雞翼',28,'小食','小食類可以推動加配，提高平均客單價。',['加配','小食'],['加辣粉','蜜糖芥末醬']]];
-    const state={category:'all',search:'',branch:'旺角店',phone:'85200001111',mode:'堂食',cart:[]}; const modeNotes={'堂食':'歡迎到店用餐，繁忙時間建議先 WhatsApp 查詢座位。','自取':'WhatsApp 預訂後，通常約 15-20 分鐘可到店自取。','外賣':'部分地區可安排外賣，請先 WhatsApp 查詢送餐範圍及費用。'};
-    const grid=document.getElementById('menuGrid'); grid.innerHTML=foods.map((f,i)=>`<article class="food-card" data-category="${f[0]}" data-name="${f[1]}" data-price="${f[2]}"><div class="food-img" data-label="${f[3]}"></div><div class="food-body"><h3>${f[1]}</h3><p>${f[4]}</p><div class="tags">${f[5].map(t=>`<span class="tag ${t.includes('人氣')||t.includes('熱賣')||t.includes('推介')?'hot':t.includes('微辣')?'spicy':t.includes('午市')?'new':''}">${t}</span>`).join('')}</div><div class="addon-row"><small>加配選項</small>${f[6].map(a=>`<label><input type="checkbox" value="${a}"> ${a}</label>`).join('')}</div><div class="price-row"><span class="price">HK$${f[2]}</span><button class="small-btn">加入查詢</button></div></div></article>`).join('');
-    const tabs=document.querySelectorAll('.tab'), cards=()=>document.querySelectorAll('.food-card'), searchInput=document.getElementById('searchInput');
-    function applyFilters(){const q=state.search.trim().toLowerCase();cards().forEach(card=>{const cm=state.category==='all'||card.dataset.category===state.category;const text=(card.dataset.name+' '+card.innerText).toLowerCase();card.style.display=cm&&(!q||text.includes(q))?'block':'none';});}
-    tabs.forEach(tab=>tab.addEventListener('click',()=>{state.category=tab.dataset.category;tabs.forEach(t=>t.classList.remove('active'));tab.classList.add('active');applyFilters();})); searchInput.addEventListener('input',e=>{state.search=e.target.value;applyFilters();});
-    document.querySelectorAll('.mode-tab').forEach(tab=>tab.addEventListener('click',()=>{state.mode=tab.dataset.mode;document.querySelectorAll('.mode-tab').forEach(t=>t.classList.remove('active'));tab.classList.add('active');document.getElementById('modeNote').innerText=modeNotes[state.mode];}));
-    function getAddons(card){return Array.from(card.querySelectorAll('.addon-row input:checked')).map(i=>i.value)}
-    function renderCart(){const cartItems=document.getElementById('cartItems'),cartTotal=document.getElementById('cartTotal'),stickyCount=document.getElementById('stickyCount'); if(!state.cart.length){cartItems.innerHTML='<div class="cart-empty">未加入餐品</div>'}else{cartItems.innerHTML=state.cart.map((item,index)=>`<div class="cart-item"><div><strong>${item.name}</strong><span>${item.addons.length?item.addons.join('、'):'無加配'}｜${item.mode}</span></div><button class="remove" onclick="removeCartItem(${index})">×</button></div>`).join('')} const total=state.cart.reduce((s,item)=>s+item.price,0); cartTotal.innerText=`HK$${total}`; stickyCount.innerText=state.cart.length}
-    window.removeCartItem=i=>{state.cart.splice(i,1);renderCart()}; document.querySelectorAll('.small-btn').forEach(button=>button.addEventListener('click',()=>{const card=button.closest('.food-card');state.cart.push({name:card.dataset.name,price:Number(card.dataset.price||0),addons:getAddons(card),mode:state.mode});renderCart();})); document.getElementById('clearCart').addEventListener('click',()=>{state.cart=[];renderCart();});
-    function buildMsg(intro='你好，我想查詢以下餐品：'){const lines=[intro,`分店：${state.branch}`,`模式：${state.mode}`]; if(!state.cart.length){lines.push('我想了解餐牌 / 今日優惠。')}else{state.cart.forEach((item,i)=>lines.push(`${i+1}. ${item.name} HK$${item.price}${item.addons.length?'（'+item.addons.join('、')+'）':''}`)); lines.push(`估算總額：HK$${state.cart.reduce((s,item)=>s+item.price,0)}`)} return encodeURIComponent(lines.join('\n'))} document.getElementById('sendWhatsapp').addEventListener('click',()=>window.open(`https://wa.me/${state.phone}?text=${buildMsg()}`,'_blank'));
-    function updateLinks(){const msg=encodeURIComponent(`你好，我想查詢 ${state.branch} 嘅餐牌 / 今日優惠。`),url=`https://wa.me/${state.phone}?text=${msg}`;['headerWhatsapp','heroWhatsapp','branchWhatsapp','auditWhatsapp','stickyWhatsapp'].forEach(id=>{const el=document.getElementById(id);if(el)el.href=url;});}
-    document.querySelectorAll('.branch-card').forEach(card=>card.addEventListener('click',()=>{document.querySelectorAll('.branch-card').forEach(c=>c.classList.remove('active'));card.classList.add('active');state.branch=card.dataset.branch;state.phone=card.dataset.phone;document.getElementById('selectedBranchMini').innerText=state.branch;document.getElementById('stickyBranch').innerText=state.branch;document.getElementById('mapBranch').innerText=state.branch;document.getElementById('branchTitle').innerText=state.branch;document.getElementById('branchAddress').innerText=`地址：${card.dataset.address}`;document.getElementById('branchHours').innerText=`營業時間：${card.dataset.hours}`;updateLinks();}));
-    let seconds=2*3600+35*60+20; setInterval(()=>{seconds=Math.max(0,seconds-1);const h=String(Math.floor(seconds/3600)).padStart(2,'0'),m=String(Math.floor((seconds%3600)/60)).padStart(2,'0'),s=String(seconds%60).padStart(2,'0');document.getElementById('countdown').innerText=`${h}:${m}:${s}`},1000); renderCart(); updateLinks();
-  </script>
+
+<!-- ═══ Scissors Background ═══ -->
+<div class="scissors-bg" aria-hidden="true">
+  <!-- Scissors SVG (repeated at different positions via class) -->
+  <svg class="sc sc1" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+  <svg class="sc sc2" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+  <svg class="sc sc3" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+  <svg class="sc sc4" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+  <svg class="sc sc5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+  <svg class="sc sc6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+  <svg class="sc sc7" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="14" cy="50" r="9" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 19 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 45 L54 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="37" cy="32" r="3.5" fill="currentColor"/>
+  </svg>
+</div>
+
+<!-- ═══ Header ═══ -->
+<header class="header" id="top">
+  <div class="container">
+    <nav class="nav">
+      <a href="#top" class="brand">
+        <div class="brand-mark">
+          <svg width="26" height="26" viewBox="0 0 64 64" fill="none" stroke="var(--mint)" stroke-width="5" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="9"/>
+            <circle cx="14" cy="50" r="9"/>
+            <path d="M21 19 L54 32"/>
+            <path d="M21 45 L54 32"/>
+            <circle cx="37" cy="32" r="3.5" fill="var(--mint)" stroke="none"/>
+          </svg>
+        </div>
+        <div class="brand-name">
+          LinK Cut
+          <small>單剪專門店</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#prices">價目</a>
+        <a href="#rest-days">休息日</a>
+        <a href="#process">服務流程</a>
+        <a href="#location">地址</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20LinK%20Cut%20%E5%96%AE%E5%89%AA%E6%9C%8D%E5%8B%99%E3%80%82" target="_blank" rel="noopener" class="btn btn-wa nav-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp 查詢
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#prices"    onclick="closeMobileNav()">💰 價目一覽</a>
+      <a href="#rest-days" onclick="closeMobileNav()">📅 每月休息日</a>
+      <a href="#process"   onclick="closeMobileNav()">✂️ 服務流程</a>
+      <a href="#location"  onclick="closeMobileNav()">📍 地址</a>
+      <a href="#faq"       onclick="closeMobileNav()">❓ FAQ</a>
+      <div class="mobile-nav-wa">
+        <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20LinK%20Cut%20%E5%96%AE%E5%89%AA%E6%9C%8D%E5%8B%99%E3%80%82" target="_blank" rel="noopener" class="btn btn-wa btn-lg" style="width:100%;justify-content:center;" onclick="closeMobileNav()">
+          WhatsApp 查詢
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══ Hero ═══ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">
+        <span class="pulse"></span>
+        今日營業中
+      </div>
+      <h1>快捷、乾淨、<em>親民價錢</em>的日常單剪</h1>
+      <p class="hero-desc">專為街坊、學生、長者、上班族而設，無需預約，簡單俐落，約10分鐘完成。</p>
+      <div class="hero-pills">
+        <span class="hero-pill">無需預約</span>
+        <span class="hero-pill">Walk-in 即可</span>
+        <span class="hero-pill">約10分鐘完成</span>
+        <span class="hero-pill">將軍澳南豐廣場</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#prices" class="btn btn-dark btn-lg">查看價目</a>
+        <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%95%8F%E8%80%8C%E5%AE%B6%E5%A4%9A%E4%BA%BA%E5%97%8E%EF%BC%9F%E5%A4%A7%E7%B4%84%E8%A6%81%E7%AD%89%E5%B9%BE%E8%80%90%EF%BC%9F" target="_blank" rel="noopener" class="btn btn-wa btn-lg">查詢等候情況</a>
+      </div>
+    </div>
+
+    <div class="hero-img-wrap">
+      <img src="images/service.jpg"
+           alt="LinK Cut 專業單剪服務"
+           class="hero-photo"
+           onerror="this.style.display='none';document.getElementById('heroPlaceholder').style.display='flex'">
+      <div id="heroPlaceholder" class="hero-photo-placeholder" style="display:none;">
+        <svg width="56" height="56" viewBox="0 0 64 64" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3.5" stroke-linecap="round"><circle cx="14" cy="14" r="9"/><circle cx="14" cy="50" r="9"/><path d="M21 19 L54 32"/><path d="M21 45 L54 32"/><circle cx="37" cy="32" r="3.5" fill="rgba(255,255,255,0.4)" stroke="none"/></svg>
+        <p>服務相片</p>
+      </div>
+      <div class="hero-float-card">
+        <strong>由 $50 起</strong>
+        <span>無需預約 · Walk-in 即可</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Quick Info Cards ═══ -->
+<section class="quick-info">
+  <div class="container">
+    <div class="quick-grid">
+      <div class="quick-card">
+        <div class="quick-icon">💰</div>
+        <strong>價錢清晰</strong>
+        <p>成人 $80<br>學生 $70 · 長者 $50</p>
+      </div>
+      <div class="quick-card">
+        <div class="quick-icon">⏱</div>
+        <strong>約10分鐘完成</strong>
+        <p>快捷俐落<br>日常剪髮首選</p>
+      </div>
+      <div class="quick-card">
+        <div class="quick-icon">📍</div>
+        <strong>將軍澳南豐廣場</strong>
+        <p>地點方便<br>易搵易泊車</p>
+      </div>
+      <div class="quick-card">
+        <div class="quick-icon">🚶</div>
+        <strong>無需預約</strong>
+        <p>歡迎 Walk-in<br>或 WhatsApp 查詢</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Pricing ═══ -->
+<section class="section section-alt" id="prices">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Price List</span>
+      <h2>價目一覽</h2>
+      <p>清晰定價，到店前已知費用。</p>
+    </div>
+
+    <div class="price-grid">
+      <!-- Adult -->
+      <div class="price-card featured">
+        <div class="price-emoji">✂️</div>
+        <h3>成人單剪</h3>
+        <div class="price-sub">所有髮型適用</div>
+        <div class="price-amount"><sup>HK$</sup>80</div>
+        <ul class="price-feats">
+          <li>所有髮型適用</li>
+          <li>約10分鐘完成</li>
+          <li>無需預約</li>
+        </ul>
+      </div>
+      <!-- Student -->
+      <div class="price-card">
+        <div class="price-emoji">🎓</div>
+        <h3>學生單剪</h3>
+        <div class="price-sub">學生價</div>
+        <div class="price-amount"><sup>HK$</sup>70</div>
+        <ul class="price-feats">
+          <li>學生專享價格</li>
+          <li>約10分鐘完成</li>
+          <li>無需預約</li>
+        </ul>
+      </div>
+      <!-- Senior -->
+      <div class="price-card">
+        <div class="price-emoji">🌸</div>
+        <h3>長者單剪</h3>
+        <div class="price-sub">長者價</div>
+        <div class="price-amount"><sup>HK$</sup>50</div>
+        <ul class="price-feats">
+          <li>長者專享價格</li>
+          <li>約10分鐘完成</li>
+          <li>無需預約</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-footer">
+      <p>付款方式</p>
+      <div class="payment-row">
+        <span class="pay-badge">💵 現金</span>
+        <span class="pay-badge">📱 PayMe</span>
+        <span class="pay-badge">💙 Alipay</span>
+      </div>
+      <p class="price-only-note">本店只提供單剪服務，不包括洗頭及造型服務。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Rest Days Calendar ═══ -->
+<section class="section" id="rest-days">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Rest Days</span>
+      <h2>每月休息日</h2>
+      <p>出門前可先查看當月休息日，避免白走一趟。</p>
+    </div>
+
+    <div class="calendar-container">
+      <div class="cal-header">
+        <div class="cal-title" id="calTitle">2026年6月</div>
+        <div class="cal-nav-btns">
+          <button class="cal-nav-btn" id="calPrev" aria-label="上個月">&#8592;</button>
+          <button class="cal-nav-btn" id="calNext" aria-label="下個月">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="cal-board">
+        <div class="cal-week-row">
+          <div class="cal-wday sun">日</div>
+          <div class="cal-wday">一</div>
+          <div class="cal-wday">二</div>
+          <div class="cal-wday">三</div>
+          <div class="cal-wday">四</div>
+          <div class="cal-wday">五</div>
+          <div class="cal-wday sat">六</div>
+        </div>
+        <div class="cal-days-row" id="calDays"></div>
+      </div>
+
+      <div class="cal-legend">
+        <div class="legend-item"><span class="legend-dot open"></span>營業日</div>
+        <div class="legend-item"><span class="legend-dot rest"></span>休息日</div>
+        <div class="legend-item"><span class="legend-dot todayD"></span>今日</div>
+      </div>
+
+      <p class="cal-note">
+        休息日如有更改，以店舖最新公布為準。<br>
+        如有疑問可先 <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E4%BB%A5%E4%B8%8B%E6%97%A5%E6%9C%9F%E6%98%AF%E5%90%A6%E7%87%9F%E6%A5%AD%EF%BC%9A" style="color:var(--green);font-weight:700;" target="_blank" rel="noopener">WhatsApp 查詢</a>。
+        &nbsp;·&nbsp;
+        <a href="admin.html" style="color:var(--muted);">後台更新</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Service Scope ═══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Our Services</span>
+      <h2>服務範圍</h2>
+      <p>清楚了解本店服務，省時省力。</p>
+    </div>
+
+    <div class="scope-grid">
+      <!-- Provided -->
+      <div class="scope-card">
+        <div class="scope-head">
+          <div class="scope-icon g">✂️</div>
+          <h3>本店提供</h3>
+        </div>
+        <ul class="scope-list">
+          <li><span class="sdot y">✓</span>成人單剪</li>
+          <li><span class="sdot y">✓</span>學生單剪</li>
+          <li><span class="sdot y">✓</span>長者單剪</li>
+          <li><span class="sdot y">✓</span>日常修剪</li>
+          <li><span class="sdot y">✓</span>簡單整理髮型</li>
+        </ul>
+      </div>
+      <!-- Not included -->
+      <div class="scope-card">
+        <div class="scope-head">
+          <div class="scope-icon r">🚫</div>
+          <h3>暫不包括</h3>
+        </div>
+        <ul class="scope-list">
+          <li><span class="sdot n">✕</span>洗頭服務</li>
+          <li><span class="sdot n">✕</span>電髮服務</li>
+          <li><span class="sdot n">✕</span>染髮服務</li>
+          <li><span class="sdot n">✕</span>複雜造型</li>
+          <li><span class="sdot n">✕</span>預約式 Salon 服務</li>
+        </ul>
+      </div>
+      <!-- Suitable -->
+      <div class="scope-card">
+        <div class="scope-head">
+          <div class="scope-icon b">👥</div>
+          <h3>適合客人</h3>
+        </div>
+        <ul class="scope-list">
+          <li><span class="sdot a">→</span>想快速整理髮型</li>
+          <li><span class="sdot a">→</span>學生返學 / 放學後</li>
+          <li><span class="sdot a">→</span>上班族午飯或放工後</li>
+          <li><span class="sdot a">→</span>長者日常修剪</li>
+          <li><span class="sdot a">→</span>想簡單剪短、修邊</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Service Process ═══ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">How It Works</span>
+      <h2>服務流程</h2>
+      <p>簡單四步，約10分鐘完成。</p>
+    </div>
+
+    <div class="process-wrap">
+      <div class="process-line"></div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">💰</div>
+          <h3>查看價目</h3>
+          <p>網站清楚列明<br>成人 $80 · 學生 $70 · 長者 $50</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">🚶</div>
+          <h3>到店 Walk-in</h3>
+          <p>無需預約，直接到<br>將軍澳南豐廣場</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">✂️</div>
+          <h3>專業單剪</h3>
+          <p>快捷俐落<br>約10分鐘完成</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">✅</div>
+          <h3>付款完成</h3>
+          <p>現金 / PayMe / Alipay<br>簡單方便</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Gallery ═══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Our Shop</span>
+      <h2>店舖環境及服務實況</h2>
+      <p>乾淨整潔的環境，專業快捷的服務。</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="images/service.jpg" alt="LinK Cut 專業單剪服務實況"
+             onerror="this.style.background='linear-gradient(135deg,#1A3A28,#2C7A50)'">
+        <div class="gallery-caption">✂️ 專業單剪服務</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/interior.jpg" alt="LinK Cut 店舖環境"
+             onerror="this.style.background='linear-gradient(135deg,#0D1C10,#1A3A28)'">
+        <div class="gallery-caption">🏠 乾淨整潔的店舖環境</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Why LinK Cut ═══ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Why LinK Cut</span>
+      <h2>為什麼選擇 LinK Cut</h2>
+      <p>簡單直接，街坊信賴。</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>快速俐落</h3>
+        <p>約10分鐘完成，忙碌生活中最合適的選擇。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✨</div>
+        <h3>乾淨整潔</h3>
+        <p>店舖環境整潔，每位客人獨立服務。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💬</div>
+        <h3>查詢方便</h3>
+        <p>WhatsApp 一鍵查詢，隨時了解等候情況。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <h3>地點易搵</h3>
+        <p>將軍澳南豐廣場，交通方便，易泊車。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Location ═══ -->
+<section class="section section-alt" id="location">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Find Us</span>
+      <h2>地址及到店指引</h2>
+      <p>一鍵導航，輕鬆到達。</p>
+    </div>
+
+    <div class="location-grid">
+      <div class="loc-card">
+        <h3>LinK Cut 單剪專門店</h3>
+
+        <div class="loc-row">
+          <div class="loc-ico">📍</div>
+          <div>
+            <strong>地址</strong>
+            <span>將軍澳南豐廣場<br>Tseung Kwan O, New Territories</span>
+          </div>
+        </div>
+
+        <div class="loc-row">
+          <div class="loc-ico">🕐</div>
+          <div>
+            <strong>營業時間</strong>
+            <span>
+              星期一至六：11:00 – 19:00<br>
+              星期日及公眾假期：11:00 – 18:00
+            </span>
+          </div>
+        </div>
+
+        <div class="loc-row">
+          <div class="loc-ico">📞</div>
+          <div>
+            <strong>WhatsApp 查詢</strong>
+            <span>9170 4704</span>
+          </div>
+        </div>
+
+        <div class="loc-actions">
+          <a href="https://www.google.com/maps/place/Link+cut/@22.3148367,114.261387,17z/data=!3m1!4b1!4m6!3m5!1s0x340403f160fed5a7:0xb7e52d55054f0c22!8m2!3d22.3148318!4d114.2639619!16s%2Fg%2F11kp9_g7w0?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener" class="btn btn-dark btn-lg">
+            📍 開啟 Google Map
+          </a>
+          <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%95%8F%20LinK%20Cut%20%E5%8D%97%E8%B1%90%E5%BB%A3%E5%A0%B4%E9%BB%9E%E5%8E%BB%EF%BC%9F"
+             target="_blank" rel="noopener" class="btn btn-wa btn-lg">
+            WhatsApp 問路
+          </a>
+        </div>
+      </div>
+
+      <div class="map-panel">
+        <div class="map-visual">
+          <div class="map-pin-circle">📍</div>
+          <p>將軍澳南豐廣場</p>
+          <small>按下方按鈕開啟 Google Map 導航</small>
+        </div>
+        <div class="map-foot">
+          <p>按以下按鈕可直接導航至本店</p>
+          <a href="https://www.google.com/maps/place/Link+cut/@22.3148367,114.261387,17z/data=!3m1!4b1!4m6!3m5!1s0x340403f160fed5a7:0xb7e52d55054f0c22!8m2!3d22.3148318!4d114.2639619!16s%2Fg%2F11kp9_g7w0?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener" class="btn btn-dark" style="width:100%;justify-content:center;">
+            📍 開啟 Google Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">FAQ</span>
+      <h2>常見問題</h2>
+      <p>幫你快速找到答案，減少等待時間。</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          需要預約嗎？
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">不用預約，歡迎 Walk-in 直接到店。如想了解現場等候情況，可以先 <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%95%8F%E8%80%8C%E5%AE%B6%E5%A4%9A%E4%BA%BA%E5%97%8E%EF%BC%9F%E5%A4%A7%E7%B4%84%E8%A6%81%E7%AD%89%E5%B9%BE%E8%80%90%EF%BC%9F" style="color:var(--green);font-weight:700;" target="_blank">WhatsApp 查詢</a>。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          剪髮大約需時多久？
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">約10分鐘完成，實際時間視乎現場人流及髮型而定。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          有洗頭或造型服務嗎？
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">本店只提供單剪服務，不包括洗頭及造型服務。如需相關服務，請前往其他 Salon。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          接受什麼付款方式？
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">接受現金、PayMe、Alipay。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          如何查看每月休息日？
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">可查看網站內的「<a href="#rest-days" style="color:var(--green);font-weight:700;">每月休息日行事曆</a>」。資料如有更新，以店舖最新公布為準。如不確定，可先 WhatsApp 查詢。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Anniversary ═══ -->
+<section class="section">
+  <div class="container">
+    <div class="anniv-band">
+      <div class="anniv-label">🎉 3rd Anniversary</div>
+      <h2>LinK Cut 3周年紀念</h2>
+      <p>多謝街坊一路嚟嘅支持。<br>我們會繼續提供簡單、快捷、親民的單剪服務。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Final CTA ═══ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-wrap">
+      <h2>立即 WhatsApp 查詢</h2>
+      <p>查詢等候情況、價目或問路，一鍵直達。</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%95%8F%E8%80%8C%E5%AE%B6%E5%A4%9A%E4%BA%BA%E5%97%8E%EF%BC%9F%E5%A4%A7%E7%B4%84%E8%A6%81%E7%AD%89%E5%B9%BE%E8%80%90%EF%BC%9F"
+           target="_blank" rel="noopener" class="btn btn-white btn-lg">
+          💬 查詢等候情況
+        </a>
+        <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20LinK%20Cut%20%E5%96%AE%E5%89%AA%E5%83%B9%E9%8C%A2%E3%80%82"
+           target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+          💰 查詢價目
+        </a>
+        <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%95%8F%20LinK%20Cut%20%E5%8D%97%E8%B1%90%E5%BB%A3%E5%A0%B4%E9%BB%9E%E5%8E%BB%EF%BC%9F"
+           target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+          📍 問路
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Footer ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>LinK Cut 單剪專門店</strong>
+        <p>將軍澳南豐廣場 · 一至六 11:00–19:00 · 日及假期 11:00–18:00</p>
+      </div>
+      <div class="footer-copy">© 2026 LinK Cut. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ Sticky WA Bar ═══ -->
+<div class="sticky-bar">
+  <div class="sticky-bar-text">
+    <span>LinK Cut</span> · Walk-in 即可 · 由 $50 起
+  </div>
+  <a href="https://wa.me/85291704704?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20LinK%20Cut%20%E5%96%AE%E5%89%AA%E6%9C%8D%E5%8B%99%E3%80%82"
+     target="_blank" rel="noopener" class="btn btn-wa">
+    WhatsApp 查詢
+  </a>
+</div>
+
+<script>
+  /* ── Mobile Nav ── */
+  const hamburger  = document.getElementById('hamburger');
+  const mobileNav  = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+  function closeMobileNav() {
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+  }
+
+  /* ── FAQ Accordion ── */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item    = btn.closest('.faq-item');
+      const answer  = item.querySelector('.faq-a');
+      const isOpen  = item.classList.contains('open');
+
+      // close all
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-a').style.maxHeight = '0';
+      });
+
+      // open clicked
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ── Calendar ── */
+  const STORAGE_KEY = 'linkcut_rest_days';
+
+  function getRestDays(year, month) {
+    try {
+      const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      return data[`${year}-${String(month).padStart(2,'0')}`] || [];
+    } catch { return []; }
+  }
+
+  const today   = new Date();
+  let calYear   = today.getFullYear();
+  let calMonth  = today.getMonth() + 1;
+
+  const MONTH_NAMES = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+
+  function renderCalendar() {
+    const title     = document.getElementById('calTitle');
+    const daysGrid  = document.getElementById('calDays');
+    const restDays  = getRestDays(calYear, calMonth);
+
+    title.textContent = `${calYear}年${MONTH_NAMES[calMonth - 1]}`;
+
+    const firstDay  = new Date(calYear, calMonth - 1, 1).getDay();
+    const totalDays = new Date(calYear, calMonth, 0).getDate();
+
+    let html = '';
+
+    for (let i = 0; i < firstDay; i++) {
+      html += '<div class="cal-cell empty"></div>';
+    }
+
+    for (let d = 1; d <= totalDays; d++) {
+      const dateStr   = `${calYear}-${String(calMonth).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+      const isToday   = (calYear === today.getFullYear() && calMonth === today.getMonth() + 1 && d === today.getDate());
+      const isPast    = new Date(calYear, calMonth - 1, d) < new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      const isRest    = restDays.includes(d);
+      const dayClass  = isRest ? 'rest' : 'open';
+      const statusTxt = isRest ? '休息' : '營業';
+      const classes   = `cal-cell ${dayClass}${isToday ? ' today' : ''}${isPast ? ' past' : ''}`;
+
+      html += `<div class="${classes}" data-date="${dateStr}">
+                 ${d}
+                 <span class="cell-status">${statusTxt}</span>
+               </div>`;
+    }
+
+    daysGrid.innerHTML = html;
+  }
+
+  document.getElementById('calPrev').addEventListener('click', () => {
+    calMonth--;
+    if (calMonth < 1) { calMonth = 12; calYear--; }
+    renderCalendar();
+  });
+
+  document.getElementById('calNext').addEventListener('click', () => {
+    calMonth++;
+    if (calMonth > 12) { calMonth = 1; calYear++; }
+    renderCalendar();
+  });
+
+  // Listen for storage changes (when admin.html updates)
+  window.addEventListener('storage', renderCalendar);
+
+  renderCalendar();
+</script>
 </body>
 </html>
